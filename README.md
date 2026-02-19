@@ -1,4 +1,4 @@
-# FarmaExpres 
+# FarmaExpres
 
 ## 📚 Tabla de contenido
 
@@ -13,6 +13,8 @@
 ## 🧾 Descripción
 
 Plataforma orientada a la gestión y operación de servicios farmacéuticos, organizada en módulos independientes para frontend, backend, API y base de datos.
+
+Este es el repositorio principal de FarmaExpres y funciona como menú/hub para navegar, organizar y coordinar el desarrollo de todo el proyecto.
 
 <a id="repositorios-del-proyecto"></a>
 
@@ -55,9 +57,9 @@ Tecnologías e IDEs por definir dentro del ecosistema (según cada módulo):
 
 Proyecto desarrollado de forma colaborativa por el equipo del programa de Ingeniería de Sistemas, VIII semestre de CORHUILA.
 
-- Buitrago Murcia Jersson Fabian — [@JerssonF](https://github.com/JerssonF)
+- Buitrago Murcia Jersson Fabián — [@JerssonF](https://github.com/JerssonF)
 - Romero Trujillo Marlon David — [@Marlon271](https://github.com/Marlon271)
-- Tello Mendez Nicolas — [@temenico](https://github.com/Temenico)
+- Tello Méndez Nicolás — [@temenico](https://github.com/temenico)
 - Vargas Herrera José Leonardo — [@jose6668](https://github.com/jose6668)
 
 ---
