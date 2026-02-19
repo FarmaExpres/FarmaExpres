@@ -1,9 +1,5 @@
 # FarmaExpres 
 
-<p align="center">
-	<img alt="Logo FarmaExpres" src="https://via.placeholder.com/180x180.png?text=FarmaExpres+Logo" />
-</p>
-
 Plataforma orientada a la gestión y operación de servicios farmacéuticos, organizada en módulos independientes para frontend, backend, API y base de datos.
 
 ## 📦 Repositorios del proyecto
