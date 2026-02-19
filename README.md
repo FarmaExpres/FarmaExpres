@@ -1,6 +1,20 @@
 # FarmaExpres 
 
+## 📚 Tabla de contenido
+
+- [Descripción](#descripcion)
+- [Repositorios del proyecto](#repositorios-del-proyecto)
+- [Arquitectura general](#arquitectura-general)
+- [Stack tecnológico](#stack-tecnologico)
+- [Equipo](#equipo)
+
+<a id="descripcion"></a>
+
+## 🧾 Descripción
+
 Plataforma orientada a la gestión y operación de servicios farmacéuticos, organizada en módulos independientes para frontend, backend, API y base de datos.
+
+<a id="repositorios-del-proyecto"></a>
 
 ## 📦 Repositorios del proyecto
 
@@ -12,6 +26,8 @@ Este repositorio funciona como punto de entrada para todo el ecosistema de **Far
 - **Base de Datos:** [FarmaExpres-database](https://github.com/Marlon271/FarmaExpres-database)
 - **Semanas / Avances:** [FarmaExpres-Weeks](https://github.com/jose6668/FarmaExpres-Weeks)
 
+<a id="arquitectura-general"></a>
+
 ## 🧩 Arquitectura general
 
 FarmaExpres está dividido por responsabilidades para facilitar mantenimiento, despliegue y trabajo colaborativo:
@@ -20,6 +36,8 @@ FarmaExpres está dividido por responsabilidades para facilitar mantenimiento, d
 - **Backend** → Lógica de negocio y servicios
 - **API** → Exposición de endpoints
 - **Database** → Estructura y gestión de datos
+
+<a id="stack-tecnologico"></a>
 
 ## 🛠️ Stack tecnológico
 
@@ -30,6 +48,8 @@ Tecnologías e IDEs por definir dentro del ecosistema (según cada módulo):
 - **API:** Por definir
 - **Database:** Por definir
 - **IDE / Herramientas:** Por definir
+
+<a id="equipo"></a>
 
 ## 👥 Equipo
 
