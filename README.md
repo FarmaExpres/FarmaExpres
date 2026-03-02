@@ -1,66 +1,133 @@
 # FarmaExpres
 
-## 📚 Tabla de contenido
+## 📚 Tabla de Contenido
 
 - [Descripción](#descripcion)
-- [Repositorios del proyecto](#repositorios-del-proyecto)
-- [Arquitectura general](#arquitectura-general)
-- [Stack tecnológico](#stack-tecnologico)
+- [Arquitectura General](#arquitectura-general)
+- [Estructura del Ecosistema](#estructura-del-ecosistema)
+- [Stack Tecnológico](#stack-tecnologico)
+- [Requisitos del Entorno](#requisitos-del-entorno)
 - [Equipo](#equipo)
+- [Estado del Proyecto](#estado-del-proyecto)
+
+---
 
 <a id="descripcion"></a>
 
 ## 🧾 Descripción
 
-Plataforma orientada a la gestión y operación de servicios farmacéuticos, organizada en módulos independientes para frontend, backend, API y base de datos.
+**FarmaExpres** es una plataforma orientada a la gestión y operación de servicios farmacéuticos.
 
-Este es el repositorio principal de FarmaExpres y funciona como menú/hub para navegar, organizar y coordinar el desarrollo de todo el proyecto.
+El sistema está diseñado bajo una arquitectura modular basada en microservicios, separando responsabilidades entre frontend, backend, API y base de datos. Esta estructura permite:
 
-<a id="repositorios-del-proyecto"></a>
+- Escalabilidad horizontal  
+- Mantenimiento independiente por módulo  
+- Despliegue desacoplado  
+- Trabajo colaborativo estructurado  
 
-## 📦 Repositorios del proyecto
+Este repositorio funciona como **hub principal**, centralizando y organizando el ecosistema completo del proyecto.
 
-Este repositorio funciona como punto de entrada para todo el ecosistema de **FarmaExpres**:
-
-- **Frontend (Portal):** [FarmaExpres-portal](https://github.com/Temenico/FarmaExpres-portal)
-- **Backend:** [FarmaExpres-backend](https://github.com/jose6668/FarmaExpres-backend)
-- **API:** [FarmaExpres-api](https://github.com/Marlon271/FarmaExpres-api)
-- **Base de Datos:** [FarmaExpres-database](https://github.com/Marlon271/FarmaExpres-database)
-- **Semanas / Avances:** [FarmaExpres-Weeks](https://github.com/jose6668/FarmaExpres-Weeks)
+---
 
 <a id="arquitectura-general"></a>
 
-## 🧩 Arquitectura general
+## 🧩 Arquitectura General
 
-FarmaExpres está dividido por responsabilidades para facilitar mantenimiento, despliegue y trabajo colaborativo:
+FarmaExpres está dividido por responsabilidades:
 
-- **Portal** → Interfaz de usuario
-- **Backend** → Lógica de negocio y servicios
-- **API** → Exposición de endpoints
-- **Database** → Estructura y gestión de datos
+- **Portal (Frontend)** → Interfaz de usuario  
+- **Backend (Microservicios)** → Lógica de negocio  
+- **API** → Exposición y orquestación de endpoints  
+- **Database** → Persistencia y administración de datos  
+
+Arquitectura basada en microservicios con separación clara entre servicios funcionales (ej: Inventory, Login, etc.).
+
+---
+
+<a id="estructura-del-ecosistema"></a>
+
+## 📦 Estructura del Ecosistema
+
+Repositorios que conforman el proyecto:
+
+- **Frontend (Portal)**  
+  https://github.com/Temenico/FarmaExpres-portal  
+
+- **Backend (Microservicios)**  
+  https://github.com/jose6668/FarmaExpres-backend  
+
+- **API**  
+  https://github.com/Marlon271/FarmaExpres-api  
+
+- **Base de Datos**  
+  https://github.com/Marlon271/FarmaExpres-database  
+
+- **Seguimiento y Avances**  
+  https://github.com/jose6668/FarmaExpres-Weeks  
+
+---
 
 <a id="stack-tecnologico"></a>
 
-## 🛠️ Stack tecnológico
+## 🛠️ Stack Tecnológico
 
-Tecnologías e IDEs por definir dentro del ecosistema (según cada módulo):
+### 🔹 Backend
+- Java  
+- Maven  
+- Arquitectura basada en microservicios  
+- API REST  
 
-- **Frontend:** Por definir
-- **Backend:** Por definir
-- **API:** Por definir
-- **Database:** Por definir
-- **IDE / Herramientas:** Por definir
+### 🔹 Bases de Datos
+- **PostgreSQL** → Base de datos relacional (modelo estructurado y soporte transaccional)  
+- **MongoDB** → Base de datos NoSQL orientada a documentos (flexibilidad y escalabilidad horizontal)  
+
+### 🔹 Control de Versiones
+- GitHub  
+
+### 🔹 Herramientas de Desarrollo
+- IntelliJ IDEA  
+- Visual Studio Code  
+- Maven Wrapper (`mvnw`)  
+
+---
+
+<a id="requisitos-del-entorno"></a>
+
+## ⚙️ Requisitos del Entorno
+
+Para el desarrollo del backend y los servicios asociados:
+
+- JDK 17 o superior  
+- Maven (opcional, incluido Maven Wrapper)  
+- PostgreSQL  
+- MongoDB  
+- Git  
+
+---
 
 <a id="equipo"></a>
 
 ## 👥 Equipo
 
-Proyecto desarrollado de forma colaborativa por el equipo del programa de Ingeniería de Sistemas, VIII semestre de CORHUILA.
+Proyecto desarrollado por estudiantes del programa de Ingeniería de Sistemas — VIII semestre — CORHUILA.
 
-- Buitrago Murcia Jersson Fabián — [@JerssonF](https://github.com/JerssonF)
-- Romero Trujillo Marlon David — [@Marlon271](https://github.com/Marlon271)
-- Tello Méndez Nicolás — [@temenico](https://github.com/temenico)
-- Vargas Herrera José Leonardo — [@jose6668](https://github.com/jose6668)
+- **Buitrago Murcia Jersson Fabián**  
+  https://github.com/JerssonF  
+
+- **Romero Trujillo Marlon David**  
+  https://github.com/Marlon271  
+
+- **Tello Méndez Nicolás**  
+  https://github.com/temenico  
+
+- **Vargas Herrera José Leonardo**  
+  https://github.com/jose6668  
 
 ---
 
+<a id="estado-del-proyecto"></a>
+
+## 📌 Estado del Proyecto
+
+En desarrollo activo.  
+Arquitectura modular en proceso de consolidación y expansión progresiva.
