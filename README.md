@@ -18,7 +18,7 @@
 
 **FarmaExpres** es una plataforma orientada a la gestión y operación de servicios farmacéuticos.
 
-El sistema está diseñado bajo una arquitectura modular basada en microservicios, separando responsabilidades entre frontend, backend, API y base de datos. Esta estructura permite:
+El sistema está diseñado bajo una arquitectura modular basada en microservicios, separando responsabilidades entre frontend, backend, API, base de datos y documentación arquitectónica. Esta estructura permite:
 
 - Escalabilidad horizontal  
 - Mantenimiento independiente por módulo  
@@ -39,6 +39,7 @@ FarmaExpres está dividido por responsabilidades:
 - **Backend (Microservicios)** → Lógica de negocio  
 - **API** → Exposición y orquestación de endpoints  
 - **Database** → Persistencia y administración de datos  
+- **Diagrama de Arquitectura** → Documentación estructural del sistema  
 
 Arquitectura basada en microservicios con separación clara entre servicios funcionales (ej: Inventory, Login, etc.).
 
@@ -62,6 +63,9 @@ Repositorios que conforman el proyecto:
 - **Base de Datos**  
   https://github.com/Marlon271/FarmaExpres-database  
 
+- **Diagrama de Arquitectura**  
+  https://github.com/jose6668/FarmaExpres-Diagrama  
+
 - **Seguimiento y Avances**  
   https://github.com/jose6668/FarmaExpres-Weeks  
 
@@ -82,6 +86,7 @@ Repositorios que conforman el proyecto:
 - **MongoDB** → Base de datos NoSQL orientada a documentos (flexibilidad y escalabilidad horizontal)  
 
 ### 🔹 Control de Versiones
+- Git  
 - GitHub  
 
 ### 🔹 Herramientas de Desarrollo
@@ -130,4 +135,4 @@ Proyecto desarrollado por estudiantes del programa de Ingeniería de Sistemas �
 ## 📌 Estado del Proyecto
 
 En desarrollo activo.  
-Arquitectura modular en proceso de consolidación y expansión progresiva.
+Arquitectura modular en proceso de consolidación, documentación y expansión progresiva.
