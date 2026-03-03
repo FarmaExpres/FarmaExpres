@@ -63,8 +63,8 @@ Repositorios que conforman el proyecto:
 - **Base de Datos**  
   https://github.com/Marlon271/FarmaExpres-database  
 
-- **Diagrama de Arquitectura**  
-  https://github.com/jose6668/FarmaExpres-Diagrama  
+- **Documentacion**  
+  https://github.com/jose6668/FarmaExpres-Doc.git
 
 - **Seguimiento y Avances**  
   https://github.com/jose6668/FarmaExpres-Weeks  
