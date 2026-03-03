@@ -1,6 +1,6 @@
 # FarmaExpres
 
-## 📚 Tabla de Contenido
+## Tabla de Contenido
 
 - [Descripción](#descripcion)
 - [Arquitectura General](#arquitectura-general)
@@ -14,7 +14,7 @@
 
 <a id="descripcion"></a>
 
-## 🧾 Descripción
+## Descripción
 
 **FarmaExpres** es una plataforma orientada a la gestión y operación de servicios farmacéuticos.
 
@@ -31,7 +31,7 @@ Este repositorio funciona como **hub principal**, centralizando y organizando el
 
 <a id="arquitectura-general"></a>
 
-## 🧩 Arquitectura General
+## Arquitectura General
 
 FarmaExpres está dividido por responsabilidades:
 
@@ -39,7 +39,8 @@ FarmaExpres está dividido por responsabilidades:
 - **Backend (Microservicios)** → Lógica de negocio  
 - **API** → Exposición y orquestación de endpoints  
 - **Database** → Persistencia y administración de datos  
-- **Diagrama de Arquitectura** → Documentación estructural del sistema  
+- **Diagramas** → Modelado estructural y comportamental del sistema  
+- **Documentación** → Requerimientos, MoSCoW, MVP, trazabilidad y avances  
 
 Arquitectura basada en microservicios con separación clara entre servicios funcionales (ej: Inventory, Login, etc.).
 
@@ -47,48 +48,52 @@ Arquitectura basada en microservicios con separación clara entre servicios func
 
 <a id="estructura-del-ecosistema"></a>
 
-## 📦 Estructura del Ecosistema
+## Estructura del Ecosistema
 
 Repositorios que conforman el proyecto:
 
-- **Frontend (Portal)**  
-  https://github.com/Temenico/FarmaExpres-portal  
+### Frontend (Portal)
+- https://github.com/Temenico/FarmaExpres-portal  
 
-- **Backend (Microservicios)**  
-  https://github.com/jose6668/FarmaExpres_Backend
-- **API**  
-  https://github.com/Marlon271/FarmaExpres-api  
+### Backend (Microservicios)
+- https://github.com/jose6668/FarmaExpres_Backend  
 
-- **Base de Datos**  
-  https://github.com/Marlon271/FarmaExpres-database  
+### API
+- https://github.com/Marlon271/FarmaExpres-api  
 
-- **Documentacion**  
-  https://github.com/jose6668/FarmaExpres-Doc.git
+### Base de Datos
+- https://github.com/Marlon271/FarmaExpres-database  
 
-- **Seguimiento y Avances**  
-  https://github.com/jose6668/FarmaExpres-Weeks  
+### Documentación
+- https://github.com/jose6668/FarmaExpres-Doc  
+
+### Diagramas
+- https://github.com/jose6668/FarmaExpres-Diagramas  
+
+### Seguimiento y Avances (Weeks)
+- https://github.com/jose6668/FarmaExpres-Weeks  
 
 ---
 
 <a id="stack-tecnologico"></a>
 
-## 🛠️ Stack Tecnológico
+## Stack Tecnológico
 
-### 🔹 Backend
+### Backend
 - Java  
 - Maven  
 - Arquitectura basada en microservicios  
 - API REST  
 
-### 🔹 Bases de Datos
-- **PostgreSQL** → Base de datos relacional (modelo estructurado y soporte transaccional)  
-- **MongoDB** → Base de datos NoSQL orientada a documentos (flexibilidad y escalabilidad horizontal)  
+### Bases de Datos
+- PostgreSQL → Base de datos relacional (modelo estructurado y soporte transaccional)  
+- MongoDB → Base de datos NoSQL orientada a documentos (flexibilidad y escalabilidad horizontal)  
 
-### 🔹 Control de Versiones
+### Control de Versiones
 - Git  
 - GitHub  
 
-### 🔹 Herramientas de Desarrollo
+### Herramientas de Desarrollo
 - IntelliJ IDEA  
 - Visual Studio Code  
 - Maven Wrapper (`mvnw`)  
@@ -97,7 +102,7 @@ Repositorios que conforman el proyecto:
 
 <a id="requisitos-del-entorno"></a>
 
-## ⚙️ Requisitos del Entorno
+## Requisitos del Entorno
 
 Para el desarrollo del backend y los servicios asociados:
 
@@ -111,7 +116,7 @@ Para el desarrollo del backend y los servicios asociados:
 
 <a id="equipo"></a>
 
-## 👥 Equipo
+## Equipo
 
 Proyecto desarrollado por estudiantes del programa de Ingeniería de Sistemas — VIII semestre — CORHUILA.
 
@@ -122,7 +127,7 @@ Proyecto desarrollado por estudiantes del programa de Ingeniería de Sistemas �
   https://github.com/Marlon271  
 
 - **Tello Méndez Nicolás**  
-  https://github.com/temenico  
+  https://github.com/Temenico  
 
 - **Vargas Herrera José Leonardo**  
   https://github.com/jose6668  
@@ -131,7 +136,16 @@ Proyecto desarrollado por estudiantes del programa de Ingeniería de Sistemas �
 
 <a id="estado-del-proyecto"></a>
 
-## 📌 Estado del Proyecto
+## Estado del Proyecto
 
-En desarrollo activo.  
-Arquitectura modular en proceso de consolidación, documentación y expansión progresiva.
+En desarrollo activo.
+
+Actualmente se encuentra en fase de:
+
+- Consolidación de arquitectura modular  
+- Implementación progresiva de microservicios  
+- Documentación formal (RF, RNF, MoSCoW, MVP)  
+- Diseño y validación de diagramas UML  
+- Planificación y seguimiento por semanas  
+
+El proyecto evoluciona bajo un enfoque incremental y estructurado.
