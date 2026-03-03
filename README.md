@@ -55,8 +55,7 @@ Repositorios que conforman el proyecto:
   https://github.com/Temenico/FarmaExpres-portal  
 
 - **Backend (Microservicios)**  
-  https://github.com/jose6668/FarmaExpres-backend  
-
+  https://github.com/jose6668/FarmaExpres_Backend
 - **API**  
   https://github.com/Marlon271/FarmaExpres-api  
 
