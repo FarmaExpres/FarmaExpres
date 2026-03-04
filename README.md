@@ -3,6 +3,14 @@
 ## Tabla de Contenido
 
 - [Descripción](#descripcion)
+- [La Empresa](#empresa)
+- [Problemática](#problematica)
+- [Objetivo General](#objetivo-general)
+- [Objetivos Específicos](#objetivos-especificos)
+- [Funcionamiento de la Plataforma](#funcionamiento)
+- [Alcance del Sistema](#alcance)
+- [Beneficios del Sistema](#beneficios)
+- [Valor para el Negocio](#valor-negocio)
 - [Arquitectura General](#arquitectura-general)
 - [Estructura del Ecosistema](#estructura-del-ecosistema)
 - [Stack Tecnológico](#stack-tecnologico)
@@ -16,7 +24,7 @@
 
 ## Descripción
 
-**FarmaExpres** es una plataforma orientada a la gestión y operación de servicios farmacéuticos.
+FarmaExpres es una plataforma orientada a la gestión y operación de servicios farmacéuticos.
 
 El sistema está diseñado bajo una arquitectura modular basada en microservicios, separando responsabilidades entre frontend, backend, API, base de datos y documentación arquitectónica. Esta estructura permite:
 
@@ -26,6 +34,117 @@ El sistema está diseñado bajo una arquitectura modular basada en microservicio
 - Trabajo colaborativo estructurado  
 
 Este repositorio funciona como **hub principal**, centralizando y organizando el ecosistema completo del proyecto.
+
+---
+
+<a id="empresa"></a>
+
+## La Empresa
+
+FarmaExpres representa el modelo de una pequeña farmacia que opera desde una única sede y requiere mejorar la forma en que administra sus medicamentos, inventario y procesos internos.
+
+Actualmente muchas farmacias pequeñas gestionan su inventario mediante registros manuales o herramientas básicas, lo que dificulta el control adecuado de los productos, sus fechas de vencimiento y los movimientos de inventario.
+
+FarmaExpres busca resolver esta situación mediante una plataforma digital que permita organizar y controlar la información de manera centralizada, confiable y accesible para los usuarios autorizados.
+
+---
+
+<a id="problematica"></a>
+
+## Problemática
+
+Las farmacias pequeñas enfrentan diversas dificultades en la gestión de sus medicamentos y operaciones internas, entre ellas:
+
+- Falta de control claro sobre el inventario disponible.
+- Riesgo de vender medicamentos vencidos.
+- Pérdidas económicas por productos que caducan sin ser detectados a tiempo.
+- Registros manuales que generan errores humanos.
+- Dificultad para conocer el historial de movimientos de los productos.
+- Falta de información confiable para la toma de decisiones administrativas.
+
+---
+
+<a id="objetivo-general"></a>
+
+## Objetivo General
+
+Desarrollar una plataforma digital que permita gestionar y controlar el inventario de medicamentos de una farmacia con una única sede, facilitando el registro de productos, movimientos de inventario y consultas en tiempo real.
+
+---
+
+<a id="objetivos-especificos"></a>
+
+## Objetivos Específicos
+
+- Implementar un sistema para registrar medicamentos con lote, fecha de vencimiento y cantidad disponible.
+- Permitir el control de entradas y salidas de medicamentos.
+- Registrar el historial de movimientos del inventario.
+- Implementar control de usuarios y permisos.
+- Generar alertas de medicamentos próximos a vencer.
+- Facilitar consultas rápidas del inventario.
+
+---
+
+<a id="funcionamiento"></a>
+
+## Funcionamiento de la Plataforma
+
+FarmaExpres funcionará como una aplicación web donde los usuarios autorizados podrán acceder mediante un sistema de inicio de sesión.
+
+Una vez dentro del sistema podrán:
+
+- Registrar medicamentos.
+- Consultar el inventario disponible.
+- Registrar entradas de productos.
+- Registrar salidas de medicamentos.
+- Visualizar alertas de vencimiento.
+- Consultar el historial de movimientos.
+
+Toda la información se almacenará en una base de datos que permitirá mantener un control organizado y confiable de los medicamentos.
+
+---
+
+<a id="alcance"></a>
+
+## Alcance del Sistema
+
+La plataforma FarmaExpres está diseñada para apoyar la gestión operativa de una farmacia con una única sede.
+
+El sistema permitirá:
+
+- Gestión de usuarios
+- Registro de medicamentos
+- Control de inventario
+- Registro de entradas y salidas
+- Control de fechas de vencimiento
+- Consulta de historial de movimientos
+- Alertas de medicamentos próximos a vencer
+
+Inicialmente no se contemplan integraciones externas con sistemas contables o de facturación.
+
+---
+
+<a id="beneficios"></a>
+
+## Beneficios del Sistema
+
+- Mayor control del inventario.
+- Reducción de errores humanos.
+- Prevención de pérdidas por medicamentos vencidos.
+- Información organizada y disponible en tiempo real.
+- Mejor toma de decisiones administrativas.
+- Seguridad en el acceso a la información.
+
+---
+
+
+<a id="valor-negocio"></a>
+
+## Valor para el Negocio
+
+FarmaExpres aporta valor al negocio al proporcionar una herramienta tecnológica que facilita el control del inventario y la organización de los procesos internos de la farmacia.
+
+La plataforma permitirá reducir errores operativos, mejorar la gestión de medicamentos y contar con información confiable para la toma de decisiones administrativas.
 
 ---
 
@@ -42,8 +161,6 @@ FarmaExpres está dividido por responsabilidades:
 - **Diagramas** → Modelado estructural y comportamental del sistema  
 - **Documentación** → Requerimientos, MoSCoW, MVP, trazabilidad y avances  
 
-Arquitectura basada en microservicios con separación clara entre servicios funcionales (ej: Inventory, Login, etc.).
-
 ---
 
 <a id="estructura-del-ecosistema"></a>
@@ -52,26 +169,58 @@ Arquitectura basada en microservicios con separación clara entre servicios func
 
 Repositorios que conforman el proyecto:
 
+<a id="estructura-del-ecosistema"></a>
+
+## Estructura del Ecosistema
+
+El proyecto FarmaExpres está organizado en varios repositorios que separan las responsabilidades del sistema.
+
 ### Frontend (Portal)
-- https://github.com/Temenico/FarmaExpres-portal  
+Interfaz de usuario de la aplicación.
+
+🔗 [FarmaExpres Portal](https://github.com/Temenico/FarmaExpres-portal)
+
+---
 
 ### Backend (Microservicios)
-- https://github.com/jose6668/FarmaExpres_Backend  
+Implementación de la lógica de negocio y servicios principales del sistema.
+
+🔗 [FarmaExpres Backend](https://github.com/jose6668/FarmaExpres_Backend)
+
+---
 
 ### API
-- https://github.com/Marlon271/FarmaExpres-api  
+Gestión y exposición de los endpoints que conectan el frontend con los microservicios.
+
+🔗 [FarmaExpres API](https://github.com/Marlon271/FarmaExpres-api)
+
+---
 
 ### Base de Datos
-- https://github.com/Marlon271/FarmaExpres-database  
+Estructura y configuración de las bases de datos utilizadas en el sistema.
+
+🔗 [FarmaExpres Database](https://github.com/Marlon271/FarmaExpres-database)
+
+---
 
 ### Documentación
-- https://github.com/jose6668/FarmaExpres-Doc  
+Documentos técnicos del proyecto como requerimientos, MoSCoW, MVP y análisis del sistema.
+
+🔗 [FarmaExpres Documentation](https://github.com/jose6668/FarmaExpres-Doc)
+
+---
 
 ### Diagramas
-- https://github.com/jose6668/FarmaExpres-Diagramas  
+Diagramas UML, BPMN y modelos arquitectónicos del sistema.
+
+🔗 [FarmaExpres Diagramas](https://github.com/jose6668/FarmaExpres-Diagramas)
+
+---
 
 ### Seguimiento y Avances (Weeks)
-- https://github.com/jose6668/FarmaExpres-Weeks  
+Registro del progreso del proyecto por semanas.
+
+🔗 [FarmaExpres Weeks](https://github.com/jose6668/FarmaExpres-Weeks)
 
 ---
 
@@ -85,18 +234,17 @@ Repositorios que conforman el proyecto:
 - Arquitectura basada en microservicios  
 - API REST  
 
-### Bases de Datos
-- PostgreSQL → Base de datos relacional (modelo estructurado y soporte transaccional)  
-- MongoDB → Base de datos NoSQL orientada a documentos (flexibilidad y escalabilidad horizontal)  
+### Base de Datos
+- PostgreSQL  
+- MongoDB  
 
 ### Control de Versiones
 - Git  
 - GitHub  
 
-### Herramientas de Desarrollo
+### Herramientas
 - IntelliJ IDEA  
 - Visual Studio Code  
-- Maven Wrapper (`mvnw`)  
 
 ---
 
@@ -104,10 +252,8 @@ Repositorios que conforman el proyecto:
 
 ## Requisitos del Entorno
 
-Para el desarrollo del backend y los servicios asociados:
-
 - JDK 17 o superior  
-- Maven (opcional, incluido Maven Wrapper)  
+- Maven  
 - PostgreSQL  
 - MongoDB  
 - Git  
@@ -118,19 +264,12 @@ Para el desarrollo del backend y los servicios asociados:
 
 ## Equipo
 
-Proyecto desarrollado por estudiantes del programa de Ingeniería de Sistemas — VIII semestre — CORHUILA.
+Proyecto desarrollado por estudiantes del programa de Ingeniería de Sistemas — CORHUILA.
 
-- **Buitrago Murcia Jersson Fabián**  
-  https://github.com/JerssonF  
-
-- **Romero Trujillo Marlon David**  
-  https://github.com/Marlon271  
-
-- **Tello Méndez Nicolás**  
-  https://github.com/Temenico  
-
-- **Vargas Herrera José Leonardo**  
-  https://github.com/jose6668  
+- **Buitrago Murcia Jersson Fabián**
+- **Romero Trujillo Marlon David**
+- **Tello Méndez Nicolás**
+- **Vargas Herrera José Leonardo**
 
 ---
 
@@ -142,10 +281,13 @@ En desarrollo activo.
 
 Actualmente se encuentra en fase de:
 
-- Consolidación de arquitectura modular  
-- Implementación progresiva de microservicios  
-- Documentación formal (RF, RNF, MoSCoW, MVP)  
-- Diseño y validación de diagramas UML  
-- Planificación y seguimiento por semanas  
+- Consolidación de arquitectura modular
+- Implementación progresiva de microservicios
+- Documentación formal (RF, RNF, MoSCoW, MVP)
+- Diseño de diagramas UML
+- Seguimiento por semanas
 
-El proyecto evoluciona bajo un enfoque incremental y estructurado.
+El proyecto evoluciona bajo un enfoque incremental.
+
+
+
