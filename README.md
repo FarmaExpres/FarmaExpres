@@ -163,11 +163,6 @@ FarmaExpres está dividido por responsabilidades:
 
 ---
 
-<a id="estructura-del-ecosistema"></a>
-
-## Estructura del Ecosistema
-
-Repositorios que conforman el proyecto:
 
 <a id="estructura-del-ecosistema"></a>
 
