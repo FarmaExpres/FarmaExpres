@@ -8,7 +8,7 @@ Proyecto principal del ecosistema FarmaExpres.
 **Fórmula:**  
 Participación (%) = (commits únicos del integrante / commits únicos totales del ecosistema) × 100
 
-**Última actualización:** 2026-03-18 17:54 UTC
+**Última actualización:** 2026-03-18 18:16 UTC
 
 **Cobertura del KPI:** todos los commits detectados en todas las ramas de todos los repositorios configurados, deduplicados por SHA.
 
@@ -16,11 +16,11 @@ Participación (%) = (commits únicos del integrante / commits únicos totales d
 
 | Integrante | Commits únicos | Participación | Repos | Ramas |
 |---|---:|---:|---:|---:|
-| José Leonardo Vargas | 72 | 47.37% | 5 | 16 |
-| Jersson Fabián Buitrago | 45 | 29.61% | 4 | 10 |
-| Marlon David Romero | 20 | 13.16% | 6 | 10 |
-| Nicolás Tello | 14 | 9.21% | 3 | 8 |
-| github-actions[bot] | 1 | 0.66% | 1 | 1 |
+| José Leonardo Vargas | 72 | 46.45% | 5 | 16 |
+| Jersson Fabián Buitrago | 47 | 30.32% | 4 | 11 |
+| Marlon David Romero | 20 | 12.90% | 6 | 10 |
+| Nicolás Tello | 14 | 9.03% | 3 | 8 |
+| github-actions[bot] | 2 | 1.29% | 1 | 1 |
 
 ### Gráfico de torta
 
@@ -28,10 +28,10 @@ Participación (%) = (commits únicos del integrante / commits únicos totales d
 pie showData
     title Participación del grupo de trabajo
     "José Leonardo Vargas" : 72
-    "Jersson Fabián Buitrago" : 45
+    "Jersson Fabián Buitrago" : 47
     "Marlon David Romero" : 20
     "Nicolás Tello" : 14
-    "github-actions[bot]" : 1
+    "github-actions[bot]" : 2
 ```
 
 ### Gráfico de barras
@@ -41,7 +41,7 @@ xychart-beta
     title "Participación del grupo de trabajo"
     x-axis ["José Leonardo Vargas", "Jersson Fabián Buitrago", "Marlon David Romero", "Nicolás Tello", "github-actions[bot]"]
     y-axis "Commits únicos" 0 --> 72
-    bar [72, 45, 20, 14, 1]
+    bar [72, 47, 20, 14, 2]
 ```
 <!-- KPI:END -->
 ## Tabla de Contenido
