@@ -1,20 +1,21 @@
 {
-  "generated_at": "2026-03-18T18:26:59.509262+00:00",
-  "total_unique_commits": 156,
+  "generated_at": "2026-03-18T18:33:50.578745+00:00",
+  "total_unique_commits": 160,
   "participants": {
     "github-actions[bot]": {
       "display_name": "github-actions[bot]",
-      "commits": 3,
+      "commits": 6,
       "repos": [
         "jose6668/FarmaExpres"
       ],
       "branches": [
-        "jose6668/FarmaExpres:main"
+        "jose6668/FarmaExpres:main",
+        "jose6668/FarmaExpres:prueba-kpi"
       ]
     },
     "JerssonF": {
       "display_name": "Jersson Fabián Buitrago",
-      "commits": 47,
+      "commits": 48,
       "repos": [
         "jose6668/FarmaExpres",
         "jose6668/FarmaExpres-Doc",
@@ -111,7 +112,7 @@
   "repos": {
     "jose6668/FarmaExpres": {
       "branches": 2,
-      "commits": 28
+      "commits": 32
     },
     "Temenico/FarmaExpres-portal": {
       "branches": 5,
