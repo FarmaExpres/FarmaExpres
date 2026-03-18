@@ -289,6 +289,7 @@ Actualmente se encuentra en fase de:
 El proyecto evoluciona bajo un enfoque incremental.
 
 <!-- KPI:START -->
+<a id="kpi-de-participacion-del-grupo-de-trabajo"></a>
 ## KPI de participación del grupo de trabajo
 
 **Fórmula:**  
