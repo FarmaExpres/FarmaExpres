@@ -20,6 +20,7 @@ Proyecto principal del ecosistema FarmaExpres.
 - [Requisitos del Entorno](#requisitos-del-entorno)
 - [Equipo](#equipo)
 - [Estado del Proyecto](#estado-del-proyecto)
+ - [KPI de participación del grupo de trabajo](#kpi-de-participacion-del-grupo-de-trabajo)
 
 ---
 
