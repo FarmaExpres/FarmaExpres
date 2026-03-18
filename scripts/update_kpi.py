@@ -219,12 +219,14 @@ def main():
 
     block = f"{START_MARK}\n{build_report(serializable)}\n{END_MARK}"
 
+    # Remove any existing KPI block anywhere in the file, then append it at the end.
     if START_MARK in readme and END_MARK in readme:
         pre = readme.split(START_MARK)[0]
         post = readme.split(END_MARK)[1]
-        readme = f"{pre}{block}{post}"
-    else:
-        readme += f"\n\n{block}\n"
+        readme = f"{pre}{post}"
+
+    # Ensure the KPI block is placed at the end of the README
+    readme = readme.rstrip() + "\n\n" + block + "\n"
 
     with open(README_FILE, "w", encoding="utf-8") as f:
         f.write(readme)
