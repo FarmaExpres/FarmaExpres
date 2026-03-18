@@ -1,5 +1,9 @@
 # FarmaExpres
 
+Proyecto principal del ecosistema FarmaExpres.
+
+<!-- KPI:START -->
+<!-- KPI:END -->
 ## Tabla de Contenido
 
 - [Descripción](#descripcion)

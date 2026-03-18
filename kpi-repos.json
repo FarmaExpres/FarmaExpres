@@ -1,0 +1,18 @@
+{
+  "repos": [
+    "jose6668/FarmaExpres",
+    "Temenico/FarmaExpres-portal",
+    "jose6668/FarmaExpres_Backend",
+    "Marlon271/FarmaExpres-api",
+    "Marlon271/FarmaExpres-database",
+    "jose6668/FarmaExpres-Doc",
+    "jose6668/FarmaExpres-Diagramas",
+    "jose6668/FarmaExpres-Weeks"
+  ],
+  "team": {
+    "jose6668": "José Leonardo Vargas",
+    "JerssonF": "Jersson Fabián Buitrago",
+    "Marlon271": "Marlon David Romero",
+    "Temenico": "Nicolás Tello"
+  }
+}
