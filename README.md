@@ -8,7 +8,7 @@ Proyecto principal del ecosistema FarmaExpres.
 **Fórmula:**  
 Participación (%) = (commits únicos del integrante / commits únicos totales del ecosistema) × 100
 
-**Última actualización:** 2026-03-18 18:55 UTC
+**Última actualización:** 2026-03-18 18:56 UTC
 
 **Cobertura del KPI:** todos los commits detectados en todas las ramas de todos los repositorios configurados, deduplicados por SHA.
 
