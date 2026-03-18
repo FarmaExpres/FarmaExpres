@@ -19,8 +19,7 @@ Participación (%) = (commits únicos del integrante / commits únicos totales d
 | José Leonardo Vargas | 72 | 43.64% | 5 | 16 |
 | Jersson Fabián Buitrago | 49 | 29.70% | 4 | 11 |
 | Marlon David Romero | 20 | 12.12% | 6 | 10 |
-| Nicolás Tello | 14 | 8.48% | 3 | 8 |
-| github-actions[bot] | 10 | 6.06% | 1 | 2 |
+| Nicolás Tello | 14 | 9.03% | 3 | 8 |
 
 ### Gráfico de torta
 
@@ -31,7 +30,6 @@ pie showData
     "Jersson Fabián Buitrago" : 49
     "Marlon David Romero" : 20
     "Nicolás Tello" : 14
-    "github-actions[bot]" : 10
 ```
 
 ### Gráfico de barras
@@ -39,9 +37,9 @@ pie showData
 ```mermaid
 xychart-beta
     title "Participación del grupo de trabajo"
-    x-axis ["José Leonardo Vargas", "Jersson Fabián Buitrago", "Marlon David Romero", "Nicolás Tello", "github-actions[bot]"]
+    x-axis ["José Leonardo Vargas", "Jersson Fabián Buitrago", "Marlon David Romero", "Nicolás Tello"]
     y-axis "Commits únicos" 0 --> 72
-    bar [72, 49, 20, 14, 10]
+    bar [72, 49, 20, 14]
 ```
 <!-- KPI:END -->
 ## Tabla de Contenido

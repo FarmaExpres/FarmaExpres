@@ -1,18 +1,8 @@
 {
   "generated_at": "2026-03-18T18:51:26.151439+00:00",
-  "total_unique_commits": 165,
+  "total_unique_commits": 155,
   "participants": {
-    "github-actions[bot]": {
-      "display_name": "github-actions[bot]",
-      "commits": 10,
-      "repos": [
-        "jose6668/FarmaExpres"
-      ],
-      "branches": [
-        "jose6668/FarmaExpres:main",
-        "jose6668/FarmaExpres:prueba-kpi"
-      ]
-    },
+    
     "JerssonF": {
       "display_name": "Jersson Fabián Buitrago",
       "commits": 49,

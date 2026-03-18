@@ -62,6 +62,17 @@ def normalize_author(commit):
     return "Sin identificar"
 
 
+def is_bot(author_key, commit):
+    """Detecta autores que son bots para excluirlos del reporte."""
+    key = (author_key or "").lower()
+    if "[bot]" in key:
+        return True
+    author = commit.get("author") or {}
+    if isinstance(author, dict) and author.get("type", "").lower() == "bot":
+        return True
+    return False
+
+
 def load_config():
     with open(CONFIG_FILE, "r", encoding="utf-8") as f:
         return json.load(f)
@@ -171,6 +182,10 @@ def main():
 
                 seen_shas.add(sha)
                 author_key = normalize_author(commit)
+
+                # Excluir bots (ej. github-actions[bot], dependabot[bot])
+                if is_bot(author_key, commit):
+                    continue
 
                 participants[author_key]["commits"] += 1
                 participants[author_key]["repos"].add(full_repo)
