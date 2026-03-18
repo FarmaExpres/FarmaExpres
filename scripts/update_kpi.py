@@ -207,7 +207,8 @@ def main():
     if START_MARK in readme and END_MARK in readme:
         pre = readme.split(START_MARK)[0]
         post = readme.split(END_MARK)[1]
-        readme = f"{pre}{block}{post}"
+        # Remove the existing KPI block and append the new block at the end
+        readme = f"{pre}{post}\n\n{block}\n"
     else:
         readme += f"\n\n{block}\n"
 
