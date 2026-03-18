@@ -2,48 +2,7 @@
 
 Proyecto principal del ecosistema FarmaExpres.
 
-<!-- KPI:START -->
-## KPI de participación del grupo de trabajo
 
-**Fórmula:**  
-Participación (%) = (commits únicos del integrante / commits únicos totales del ecosistema) × 100
-
-**Última actualización:** 2026-03-18 18:26 UTC
-
-**Cobertura del KPI:** todos los commits detectados en todas las ramas de todos los repositorios configurados, deduplicados por SHA.
-
-### Tabla consolidada
-
-| Integrante | Commits únicos | Participación | Repos | Ramas |
-|---|---:|---:|---:|---:|
-| José Leonardo Vargas | 72 | 46.15% | 5 | 16 |
-| Jersson Fabián Buitrago | 47 | 30.13% | 4 | 11 |
-| Marlon David Romero | 20 | 12.82% | 6 | 10 |
-| Nicolás Tello | 14 | 8.97% | 3 | 8 |
-| github-actions[bot] | 3 | 1.92% | 1 | 1 |
-
-### Gráfico de torta
-
-```mermaid
-pie showData
-    title Participación del grupo de trabajo
-    "José Leonardo Vargas" : 72
-    "Jersson Fabián Buitrago" : 47
-    "Marlon David Romero" : 20
-    "Nicolás Tello" : 14
-    "github-actions[bot]" : 3
-```
-
-### Gráfico de barras
-
-```mermaid
-xychart-beta
-    title "Participación del grupo de trabajo"
-    x-axis ["José Leonardo Vargas", "Jersson Fabián Buitrago", "Marlon David Romero", "Nicolás Tello", "github-actions[bot]"]
-    y-axis "Commits únicos" 0 --> 72
-    bar [72, 47, 20, 14, 3]
-```
-<!-- KPI:END -->
 ## Tabla de Contenido
 
 - [Descripción](#descripcion)
@@ -328,5 +287,46 @@ Actualmente se encuentra en fase de:
 
 El proyecto evoluciona bajo un enfoque incremental.
 
+<!-- KPI:START -->
+## KPI de participación del grupo de trabajo
 
+**Fórmula:**  
+Participación (%) = (commits únicos del integrante / commits únicos totales del ecosistema) × 100
+
+**Última actualización:** 2026-03-18 18:26 UTC
+
+**Cobertura del KPI:** todos los commits detectados en todas las ramas de todos los repositorios configurados, deduplicados por SHA.
+
+### Tabla consolidada
+
+| Integrante | Commits únicos | Participación | Repos | Ramas |
+|---|---:|---:|---:|---:|
+| José Leonardo Vargas | 72 | 46.15% | 5 | 16 |
+| Jersson Fabián Buitrago | 47 | 30.13% | 4 | 11 |
+| Marlon David Romero | 20 | 12.82% | 6 | 10 |
+| Nicolás Tello | 14 | 8.97% | 3 | 8 |
+| github-actions[bot] | 3 | 1.92% | 1 | 1 |
+
+### Gráfico de torta
+
+```mermaid
+pie showData
+    title Participación del grupo de trabajo
+    "José Leonardo Vargas" : 72
+    "Jersson Fabián Buitrago" : 47
+    "Marlon David Romero" : 20
+    "Nicolás Tello" : 14
+    "github-actions[bot]" : 3
+```
+
+### Gráfico de barras
+
+```mermaid
+xychart-beta
+    title "Participación del grupo de trabajo"
+    x-axis ["José Leonardo Vargas", "Jersson Fabián Buitrago", "Marlon David Romero", "Nicolás Tello", "github-actions[bot]"]
+    y-axis "Commits únicos" 0 --> 72
+    bar [72, 47, 20, 14, 3]
+```
+<!-- KPI:END -->
 
