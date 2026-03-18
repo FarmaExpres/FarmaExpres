@@ -3,6 +3,44 @@
 Proyecto principal del ecosistema FarmaExpres.
 
 <!-- KPI:START -->
+## KPI de participación del grupo de trabajo
+
+**Fórmula:**  
+Participación (%) = (commits únicos del integrante / commits únicos totales del ecosistema) × 100
+
+**Última actualización:** 2026-03-18 17:47 UTC
+
+**Cobertura del KPI:** todos los commits detectados en todas las ramas de todos los repositorios configurados, deduplicados por SHA.
+
+### Tabla consolidada
+
+| Integrante | Commits únicos | Participación | Repos | Ramas |
+|---|---:|---:|---:|---:|
+| José Leonardo Vargas | 72 | 48.32% | 5 | 16 |
+| Jersson Fabián Buitrago | 43 | 28.86% | 4 | 10 |
+| Marlon David Romero | 20 | 13.42% | 6 | 10 |
+| Nicolás Tello | 14 | 9.40% | 3 | 8 |
+
+### Gráfico de torta
+
+```mermaid
+pie showData
+    title Participación del grupo de trabajo
+    "José Leonardo Vargas" : 72
+    "Jersson Fabián Buitrago" : 43
+    "Marlon David Romero" : 20
+    "Nicolás Tello" : 14
+```
+
+### Gráfico de barras
+
+```mermaid
+xychart-beta
+    title "Participación del grupo de trabajo"
+    x-axis ["José Leonardo Vargas", "Jersson Fabián Buitrago", "Marlon David Romero", "Nicolás Tello"]
+    y-axis "Commits únicos" 0 --> 72
+    bar [72, 43, 20, 14]
+```
 <!-- KPI:END -->
 ## Tabla de Contenido
 

@@ -1,0 +1,134 @@
+{
+  "generated_at": "2026-03-18T17:47:02.941927+00:00",
+  "total_unique_commits": 149,
+  "participants": {
+    "JerssonF": {
+      "display_name": "Jersson Fabián Buitrago",
+      "commits": 43,
+      "repos": [
+        "jose6668/FarmaExpres",
+        "jose6668/FarmaExpres-Doc",
+        "jose6668/FarmaExpres-Weeks",
+        "jose6668/FarmaExpres_Backend"
+      ],
+      "branches": [
+        "jose6668/FarmaExpres-Doc:main",
+        "jose6668/FarmaExpres-Weeks:Develop",
+        "jose6668/FarmaExpres-Weeks:main",
+        "jose6668/FarmaExpres:main",
+        "jose6668/FarmaExpres_Backend:HU-ADR-017-dev",
+        "jose6668/FarmaExpres_Backend:HU-ADR-11-dev",
+        "jose6668/FarmaExpres_Backend:HU-ADR-12-qa",
+        "jose6668/FarmaExpres_Backend:HU-ADR-15-dev",
+        "jose6668/FarmaExpres_Backend:develop",
+        "jose6668/FarmaExpres_Backend:qa"
+      ]
+    },
+    "jose6668": {
+      "display_name": "José Leonardo Vargas",
+      "commits": 72,
+      "repos": [
+        "jose6668/FarmaExpres",
+        "jose6668/FarmaExpres-Diagramas",
+        "jose6668/FarmaExpres-Doc",
+        "jose6668/FarmaExpres-Weeks",
+        "jose6668/FarmaExpres_Backend"
+      ],
+      "branches": [
+        "jose6668/FarmaExpres-Diagramas:main",
+        "jose6668/FarmaExpres-Doc:main",
+        "jose6668/FarmaExpres-Weeks:Develop",
+        "jose6668/FarmaExpres:main",
+        "jose6668/FarmaExpres_Backend:HU-ADR-01-dev",
+        "jose6668/FarmaExpres_Backend:HU-ADR-01-qa",
+        "jose6668/FarmaExpres_Backend:HU-ADR-02-dev",
+        "jose6668/FarmaExpres_Backend:HU-ADR-02-qa",
+        "jose6668/FarmaExpres_Backend:HU-ADR-03-dev",
+        "jose6668/FarmaExpres_Backend:HU-ADR-03-qa",
+        "jose6668/FarmaExpres_Backend:HU-ADR-05-dev",
+        "jose6668/FarmaExpres_Backend:HU-ADR-05-qa",
+        "jose6668/FarmaExpres_Backend:HU-ADR-06-develop",
+        "jose6668/FarmaExpres_Backend:HU-ADR-06-qa",
+        "jose6668/FarmaExpres_Backend:HU-dev-Realaese.1",
+        "jose6668/FarmaExpres_Backend:Realease.1"
+      ]
+    },
+    "Marlon271": {
+      "display_name": "Marlon David Romero",
+      "commits": 20,
+      "repos": [
+        "Marlon271/FarmaExpres-api",
+        "Marlon271/FarmaExpres-database",
+        "jose6668/FarmaExpres",
+        "jose6668/FarmaExpres-Diagramas",
+        "jose6668/FarmaExpres-Doc",
+        "jose6668/FarmaExpres_Backend"
+      ],
+      "branches": [
+        "Marlon271/FarmaExpres-api:Develop",
+        "Marlon271/FarmaExpres-database:Develop",
+        "jose6668/FarmaExpres-Diagramas:main",
+        "jose6668/FarmaExpres-Doc:main",
+        "jose6668/FarmaExpres:main",
+        "jose6668/FarmaExpres_Backend:HU-ADR-017-dev",
+        "jose6668/FarmaExpres_Backend:HU-ADR-018-dev",
+        "jose6668/FarmaExpres_Backend:HU-ADR-019-dev",
+        "jose6668/FarmaExpres_Backend:HU-ADR-020-dev",
+        "jose6668/FarmaExpres_Backend:develop"
+      ]
+    },
+    "Temenico": {
+      "display_name": "Nicolás Tello",
+      "commits": 14,
+      "repos": [
+        "Temenico/FarmaExpres-portal",
+        "jose6668/FarmaExpres",
+        "jose6668/FarmaExpres_Backend"
+      ],
+      "branches": [
+        "Temenico/FarmaExpres-portal:Develop",
+        "jose6668/FarmaExpres:main",
+        "jose6668/FarmaExpres_Backend:HU-ADR-05-dev",
+        "jose6668/FarmaExpres_Backend:HU-ADR-05-qa",
+        "jose6668/FarmaExpres_Backend:HU-ADR-06-develop",
+        "jose6668/FarmaExpres_Backend:HU-ADR-06-qa",
+        "jose6668/FarmaExpres_Backend:HU-ADR-11-dev",
+        "jose6668/FarmaExpres_Backend:HU-ADR-12-qa"
+      ]
+    }
+  },
+  "repos": {
+    "jose6668/FarmaExpres": {
+      "branches": 1,
+      "commits": 21
+    },
+    "Temenico/FarmaExpres-portal": {
+      "branches": 5,
+      "commits": 1
+    },
+    "jose6668/FarmaExpres_Backend": {
+      "branches": 29,
+      "commits": 64
+    },
+    "Marlon271/FarmaExpres-api": {
+      "branches": 4,
+      "commits": 1
+    },
+    "Marlon271/FarmaExpres-database": {
+      "branches": 4,
+      "commits": 1
+    },
+    "jose6668/FarmaExpres-Doc": {
+      "branches": 1,
+      "commits": 28
+    },
+    "jose6668/FarmaExpres-Diagramas": {
+      "branches": 1,
+      "commits": 10
+    },
+    "jose6668/FarmaExpres-Weeks": {
+      "branches": 4,
+      "commits": 23
+    }
+  }
+}
