@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-19T02:08:59.569369+00:00",
-  "total_unique_commits": 197,
+  "generated_at": "2026-03-19T04:35:29.629935+00:00",
+  "total_unique_commits": 198,
   "participants": {
     "JerssonF": {
       "display_name": "Jersson Fabián Buitrago",
@@ -56,7 +56,7 @@
     },
     "Marlon271": {
       "display_name": "Marlon David Romero",
-      "commits": 20,
+      "commits": 11,
       "repos": [
         "Marlon271/FarmaExpres-api",
         "Marlon271/FarmaExpres-database",
@@ -71,10 +71,6 @@
         "jose6668/FarmaExpres-Diagramas:main",
         "jose6668/FarmaExpres-Doc:main",
         "jose6668/FarmaExpres:main",
-        "jose6668/FarmaExpres_Backend:HU-ADR-017-dev",
-        "jose6668/FarmaExpres_Backend:HU-ADR-018-dev",
-        "jose6668/FarmaExpres_Backend:HU-ADR-019-dev",
-        "jose6668/FarmaExpres_Backend:HU-ADR-020-dev",
         "jose6668/FarmaExpres_Backend:develop"
       ]
     },
@@ -95,6 +91,21 @@
         "jose6668/FarmaExpres_Backend:HU-ADR-06-qa",
         "jose6668/FarmaExpres_Backend:HU-ADR-11-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-12-qa"
+      ]
+    },
+    "mdromero-2022b@corhuila.edu.co": {
+      "display_name": "mdromero-2022b@corhuila.edu.co",
+      "commits": 9,
+      "repos": [
+        "jose6668/FarmaExpres-Doc",
+        "jose6668/FarmaExpres_Backend"
+      ],
+      "branches": [
+        "jose6668/FarmaExpres-Doc:main",
+        "jose6668/FarmaExpres_Backend:HU-ADR-017-dev",
+        "jose6668/FarmaExpres_Backend:HU-ADR-018-dev",
+        "jose6668/FarmaExpres_Backend:HU-ADR-019-dev",
+        "jose6668/FarmaExpres_Backend:HU-ADR-020-dev"
       ]
     }
   },
