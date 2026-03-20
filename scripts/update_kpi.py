@@ -139,7 +139,13 @@ def build_report(data):
     if theme_vars:
         import json as _json
 
-        init_payload = _json.dumps({"themeVariables": theme_vars}, ensure_ascii=False)
+        # Añadir variables para hacer las etiquetas más visibles
+        label_vars = {
+            "pieLabelColor": "#ffffff",
+            "pieLabelFontSize": "18px"
+        }
+        merged = {**theme_vars, **label_vars}
+        init_payload = _json.dumps({"themeVariables": merged}, ensure_ascii=False)
         pie_lines.insert(1, f"%%{{init: {init_payload}}}%%")
 
     updated_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
