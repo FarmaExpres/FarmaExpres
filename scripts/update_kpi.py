@@ -142,7 +142,8 @@ def build_report(data):
         # Añadir variables para hacer las etiquetas más visibles
         label_vars = {
             "pieLabelColor": "#000000",
-            "pieLabelFontSize": "24px"
+            "pieLabelFontSize": "24px",
+            "pieLabelFontWeight": "700"
         }
         merged = {**theme_vars, **label_vars}
         init_payload = _json.dumps({"themeVariables": merged}, ensure_ascii=False)
