@@ -1,36 +1,34 @@
+import argparse
 import json
+import logging
 import os
-import requests
+import sys
 from collections import defaultdict
 from datetime import datetime, timezone
 
-API = "https://api.github.com"
-# Permitir ejecutar sin token (usar solicitudes no autenticadas, sujetas a límites de rate)
-TOKEN = os.environ.get("GH_TOKEN")
-HEADERS = {
-    "Accept": "application/vnd.github+json",
-    "X-GitHub-Api-Version": "2022-11-28"
-}
-if TOKEN:
-    HEADERS["Authorization"] = f"Bearer {TOKEN}"
+import requests
 
-CONFIG_FILE = "kpi-repos.json"
-README_FILE = "README.md"
-OUTPUT_JSON = "kpi-data.json"
+API = "https://api.github.com"
 
 START_MARK = "<!-- KPI:START -->"
 END_MARK = "<!-- KPI:END -->"
 
 
-def paginate(url, params=None):
+def setup_logging(verbose: bool):
+    level = logging.DEBUG if verbose else logging.INFO
+    logging.basicConfig(
+        format="%(asctime)s %(levelname)s: %(message)s", level=level
+    )
+
+
+def paginate(url, headers, params=None):
     results = []
     while url:
-        r = requests.get(url, headers=HEADERS, params=params, timeout=30)
+        r = requests.get(url, headers=headers, params=params, timeout=30)
         try:
             r.raise_for_status()
         except requests.HTTPError as e:
-            # Añadir mensaje claro si se excede el rate limit sin token
-            if r.status_code == 403 and "rate limit" in r.text.lower():
+            if r.status_code == 403 and "rate limit" in (r.text or "").lower():
                 raise RuntimeError(
                     "Rate limit alcanzado. Establece GH_TOKEN o intenta más tarde."
                 ) from e
@@ -45,15 +43,15 @@ def paginate(url, params=None):
     return results
 
 
-def list_branches(full_repo):
-    url = f"{API}/repos/{full_repo}/branches"
-    data = paginate(url, params={"per_page": 100})
+def list_branches(api, full_repo, headers):
+    url = f"{api}/repos/{full_repo}/branches"
+    data = paginate(url, headers=headers, params={"per_page": 100})
     return [b["name"] for b in data]
 
 
-def list_commits(full_repo, branch):
-    url = f"{API}/repos/{full_repo}/commits"
-    return paginate(url, params={"sha": branch, "per_page": 100})
+def list_commits(api, full_repo, branch, headers):
+    url = f"{api}/repos/{full_repo}/commits"
+    return paginate(url, headers=headers, params={"sha": branch, "per_page": 100})
 
 
 def normalize_author(commit):
@@ -73,7 +71,6 @@ def normalize_author(commit):
 
 
 def is_bot(author_key, commit):
-    """Detecta autores que son bots para excluirlos del reporte."""
     key = (author_key or "").lower()
     if "[bot]" in key:
         return True
@@ -83,29 +80,27 @@ def is_bot(author_key, commit):
     return False
 
 
-def load_config():
-    with open(CONFIG_FILE, "r", encoding="utf-8") as f:
+def load_config(path):
+    with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
 def build_report(data):
     rows = sorted(
-        data["participants"].items(),
-        key=lambda x: x[1]["commits"],
-        reverse=True
+        data["participants"].items(), key=lambda x: x[1]["commits"], reverse=True
     )
 
     total = sum(v["commits"] for _, v in rows)
 
     table = [
         "| Integrante | Commits únicos | Participación | Repos | Ramas |",
-        "|---|---:|---:|---:|---:|"
+        "|---|---:|---:|---:|---:|",
     ]
 
     pie_lines = [
         "```mermaid",
         "pie showData",
-        '    title Participación del grupo de trabajo'
+        '    title Participación del grupo de trabajo',
     ]
 
     bar_names = []
@@ -132,23 +127,19 @@ def build_report(data):
         f"    x-axis [{x_labels}]",
         f'    y-axis "Commits únicos" 0 --> {y_max}',
         f"    bar [{', '.join(bar_values)}]",
-        "```"
+        "```",
     ]
 
-    # Asignar color específico a la porción de la torta para un integrante concreto
-    # Mermaid permite definir variables de tema 'pie1', 'pie2', ... que se aplican
-    # a las porciones en el orden en que aparecen. Aquí buscamos a
-    # "José Leonardo Vargas" y, si está presente, le damos un color más visible.
     theme_vars = {}
     target_name = "José Leonardo Vargas"
     for idx, name in enumerate(bar_names):
         if name == target_name:
-            theme_vars[f"pie{idx+1}"] = "#00b3b3"  # teal / cian distintivo
+            theme_vars[f"pie{idx+1}"] = "#ff6f61"
 
     if theme_vars:
-        # Insertar la directiva %%{init: {...}}%% justo después de la apertura del bloque mermaid
-        # Construimos el JSON usando json.dumps para escapar correctamente las comillas.
-        init_payload = json.dumps({"themeVariables": theme_vars}, ensure_ascii=False)
+        import json as _json
+
+        init_payload = _json.dumps({"themeVariables": theme_vars}, ensure_ascii=False)
         pie_lines.insert(1, f"%%{{init: {init_payload}}}%%")
 
     updated_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
@@ -179,28 +170,37 @@ Participación (%) = (commits únicos del integrante / commits únicos totales d
     return report
 
 
-def main():
-    cfg = load_config()
+def run(cfg_path, output_json, readme_file, token, dry_run=False):
+    cfg = load_config(cfg_path)
     team = cfg.get("team", {})
     repos = cfg["repos"]
     aliases = cfg.get("aliases", {})
+
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
 
     seen_shas = set()
     participants = defaultdict(lambda: {
         "commits": 0,
         "repos": set(),
         "branches": set(),
-        "display_name": ""
+        "display_name": "",
     })
 
     repo_summary = {}
 
     for full_repo in repos:
-        branches = list_branches(full_repo)
+        logging.info("Listing branches for %s", full_repo)
+        branches = list_branches(API, full_repo, headers)
         repo_summary[full_repo] = {"branches": len(branches), "commits": 0}
 
         for branch in branches:
-            commits = list_commits(full_repo, branch)
+            logging.debug("Listing commits for %s@%s", full_repo, branch)
+            commits = list_commits(API, full_repo, branch, headers)
 
             for commit in commits:
                 sha = commit["sha"]
@@ -209,10 +209,8 @@ def main():
 
                 seen_shas.add(sha)
                 author_key = normalize_author(commit)
-                # Resolver alias (p. ej. emails o identificadores alternos)
                 author_key = aliases.get(author_key, author_key)
 
-                # Excluir bots (ej. github-actions[bot], dependabot[bot])
                 if is_bot(author_key, commit):
                     continue
 
@@ -230,35 +228,66 @@ def main():
                 "display_name": v["display_name"] or k,
                 "commits": v["commits"],
                 "repos": sorted(v["repos"]),
-                "branches": sorted(v["branches"])
+                "branches": sorted(v["branches"]),
             }
             for k, v in participants.items()
         },
-        "repos": repo_summary
+        "repos": repo_summary,
     }
 
-    with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
-        json.dump(serializable, f, indent=2, ensure_ascii=False)
+    if not dry_run:
+        with open(output_json, "w", encoding="utf-8") as f:
+            json.dump(serializable, f, indent=2, ensure_ascii=False)
+        logging.info("Wrote %s", output_json)
+    else:
+        logging.info("Dry run: not writing %s", output_json)
 
-    if os.path.exists(README_FILE):
-        with open(README_FILE, "r", encoding="utf-8") as f:
+    report = build_report(serializable)
+
+    if not dry_run and readme_file and os.path.exists(readme_file):
+        with open(readme_file, "r", encoding="utf-8") as f:
             readme = f.read()
     else:
         readme = "# FarmaExpres\n\n"
 
-    block = f"{START_MARK}\n{build_report(serializable)}\n{END_MARK}"
+    block = f"{START_MARK}\n{report}\n{END_MARK}"
 
-    # Remove any existing KPI block anywhere in the file, then append it at the end.
     if START_MARK in readme and END_MARK in readme:
         pre = readme.split(START_MARK)[0]
         post = readme.split(END_MARK)[1]
         readme = f"{pre}{post}"
 
-    # Ensure the KPI block is placed at the end of the README
     readme = readme.rstrip() + "\n\n" + block + "\n"
 
-    with open(README_FILE, "w", encoding="utf-8") as f:
-        f.write(readme)
+    if not dry_run and readme_file:
+        with open(readme_file, "w", encoding="utf-8") as f:
+            f.write(readme)
+        logging.info("Updated %s", readme_file)
+    else:
+        logging.info("Dry run: not updating README")
+
+
+def parse_args(argv):
+    p = argparse.ArgumentParser(description="Genera KPIs de commits y actualiza README")
+    p.add_argument("--config", default="kpi-repos.json", help="Ruta al archivo de configuración JSON")
+    p.add_argument("--output", default="kpi-data.json", help="Archivo JSON de salida")
+    p.add_argument("--readme", default="README.md", help="Archivo README a actualizar")
+    p.add_argument("--token", default=os.environ.get("GH_TOKEN"), help="Token de GitHub (o usar GH_TOKEN env)")
+    p.add_argument("--dry-run", action="store_true", help="No escribir archivos, solo simular")
+    p.add_argument("--no-readme", action="store_true", help="No actualizar README.md")
+    p.add_argument("--verbose", action="store_true", help="Modo verboso (debug)")
+    return p.parse_args(argv)
+
+
+def main(argv=None):
+    args = parse_args(argv or sys.argv[1:])
+    setup_logging(args.verbose)
+    try:
+        readme = None if args.no_readme else args.readme
+        run(args.config, args.output, readme, args.token, dry_run=args.dry_run)
+    except Exception as e:
+        logging.exception("Error ejecutando update_kpi: %s", e)
+        sys.exit(1)
 
 
 if __name__ == "__main__":
