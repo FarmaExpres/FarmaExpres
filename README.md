@@ -312,7 +312,7 @@ Participación (%) = (commits únicos del integrante / commits únicos totales d
 ### Gráfico de torta
 
 ```mermaid
-%%{init: {"themeVariables": {"pie1": "#ff6f61"}}}%%
+%%{init: {"themeVariables": {"pie1": "#ff6f61", "pie2": "#3498db", "pie3": "#f1c40f", "pie4": "#1abc9c"}}}%%
 pie showData
     title Participación del grupo de trabajo
     "José Leonardo Vargas" : 72

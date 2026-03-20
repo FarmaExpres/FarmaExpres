@@ -131,10 +131,10 @@ def build_report(data):
     ]
 
     theme_vars = {}
-    target_name = "José Leonardo Vargas"
+    # Paleta de colores más visibles para las porciones (evita tonos oscuros)
+    palette = ["#ff6f61", "#3498db", "#f1c40f", "#1abc9c", "#e67e22", "#9b59b6"]
     for idx, name in enumerate(bar_names):
-        if name == target_name:
-            theme_vars[f"pie{idx+1}"] = "#ff6f61"
+        theme_vars[f"pie{idx+1}"] = palette[idx % len(palette)]
 
     if theme_vars:
         import json as _json
