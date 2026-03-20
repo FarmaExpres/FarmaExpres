@@ -296,7 +296,7 @@ El proyecto evoluciona bajo un enfoque incremental.
 **Fórmula:**  
 Participación (%) = (commits únicos del integrante / commits únicos totales del ecosistema) × 100
 
-**Última actualización:** 2026-03-20 12:58 UTC
+**Última actualización:** 2026-03-20 13:37 UTC
 
 **Cobertura del KPI:** todos los commits detectados en todas las ramas de todos los repositorios configurados, deduplicados por SHA.
 
@@ -304,11 +304,12 @@ Participación (%) = (commits únicos del integrante / commits únicos totales d
 
 | Integrante | Commits únicos | Participación | Repos | Ramas |
 |---|---:|---:|---:|---:|
-| José Leonardo Vargas | 72 | 42.86% | 5 | 16 |
-| Jersson Fabián Buitrago | 62 | 36.90% | 4 | 11 |
-| Nicolás Tello | 14 | 8.33% | 3 | 8 |
-| Marlon David Romero | 11 | 6.55% | 6 | 6 |
-| mdromero-2022b@corhuila.edu.co | 9 | 5.36% | 2 | 5 |
+| José Leonardo Vargas | 72 | 42.60% | 5 | 16 |
+| Jersson Fabián Buitrago | 62 | 36.69% | 4 | 11 |
+| Nicolás Tello | 14 | 8.28% | 3 | 8 |
+| Marlon David Romero | 11 | 6.51% | 6 | 6 |
+| mdromero-2022b@corhuila.edu.co | 9 | 5.33% | 2 | 5 |
+| jfbuitrago-2022@corhuila.edu.co | 1 | 0.59% | 1 | 1 |
 
 ### Gráfico de torta
 
@@ -320,6 +321,7 @@ pie showData
     "Nicolás Tello" : 14
     "Marlon David Romero" : 11
     "mdromero-2022b@corhuila.edu.co" : 9
+    "jfbuitrago-2022@corhuila.edu.co" : 1
 ```
 
 ### Gráfico de barras
@@ -327,8 +329,8 @@ pie showData
 ```mermaid
 xychart-beta
     title "Participación del grupo de trabajo"
-    x-axis ["José Leonardo Vargas", "Jersson Fabián Buitrago", "Nicolás Tello", "Marlon David Romero", "mdromero-2022b@corhuila.edu.co"]
+    x-axis ["José Leonardo Vargas", "Jersson Fabián Buitrago", "Nicolás Tello", "Marlon David Romero", "mdromero-2022b@corhuila.edu.co", "jfbuitrago-2022@corhuila.edu.co"]
     y-axis "Commits únicos" 0 --> 72
-    bar [72, 62, 14, 11, 9]
+    bar [72, 62, 14, 11, 9, 1]
 ```
 <!-- KPI:END -->
