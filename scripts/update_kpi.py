@@ -5,12 +5,14 @@ from collections import defaultdict
 from datetime import datetime, timezone
 
 API = "https://api.github.com"
-TOKEN = os.environ["GH_TOKEN"]
+# Permitir ejecutar sin token (usar solicitudes no autenticadas, sujetas a límites de rate)
+TOKEN = os.environ.get("GH_TOKEN")
 HEADERS = {
     "Accept": "application/vnd.github+json",
-    "Authorization": f"Bearer {TOKEN}",
     "X-GitHub-Api-Version": "2022-11-28"
 }
+if TOKEN:
+    HEADERS["Authorization"] = f"Bearer {TOKEN}"
 
 CONFIG_FILE = "kpi-repos.json"
 README_FILE = "README.md"
@@ -24,7 +26,15 @@ def paginate(url, params=None):
     results = []
     while url:
         r = requests.get(url, headers=HEADERS, params=params, timeout=30)
-        r.raise_for_status()
+        try:
+            r.raise_for_status()
+        except requests.HTTPError as e:
+            # Añadir mensaje claro si se excede el rate limit sin token
+            if r.status_code == 403 and "rate limit" in r.text.lower():
+                raise RuntimeError(
+                    "Rate limit alcanzado. Establece GH_TOKEN o intenta más tarde."
+                ) from e
+            raise
         data = r.json()
         if isinstance(data, list):
             results.extend(data)
@@ -125,6 +135,22 @@ def build_report(data):
         "```"
     ]
 
+    # Asignar color específico a la porción de la torta para un integrante concreto
+    # Mermaid permite definir variables de tema 'pie1', 'pie2', ... que se aplican
+    # a las porciones en el orden en que aparecen. Aquí buscamos a
+    # "José Leonardo Vargas" y, si está presente, le damos un color más visible.
+    theme_vars = {}
+    target_name = "José Leonardo Vargas"
+    for idx, name in enumerate(bar_names):
+        if name == target_name:
+            theme_vars[f"pie{idx+1}"] = "#00b3b3"  # teal / cian distintivo
+
+    if theme_vars:
+        # Insertar la directiva %%{init: {...}}%% justo después de la apertura del bloque mermaid
+        # Construimos el JSON usando json.dumps para escapar correctamente las comillas.
+        init_payload = json.dumps({"themeVariables": theme_vars}, ensure_ascii=False)
+        pie_lines.insert(1, f"%%{{init: {init_payload}}}%%")
+
     updated_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
     report = f"""
@@ -157,6 +183,7 @@ def main():
     cfg = load_config()
     team = cfg.get("team", {})
     repos = cfg["repos"]
+    aliases = cfg.get("aliases", {})
 
     seen_shas = set()
     participants = defaultdict(lambda: {
@@ -182,6 +209,8 @@ def main():
 
                 seen_shas.add(sha)
                 author_key = normalize_author(commit)
+                # Resolver alias (p. ej. emails o identificadores alternos)
+                author_key = aliases.get(author_key, author_key)
 
                 # Excluir bots (ej. github-actions[bot], dependabot[bot])
                 if is_bot(author_key, commit):
