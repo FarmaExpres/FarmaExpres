@@ -186,6 +186,17 @@ Implementación de la lógica de negocio y servicios principales del sistema.
 
 🔗 [FarmaExpres Backend](https://github.com/jose6668/FarmaExpres_Backend)
 
+- Microservicios principales:
+    - 🔗 [FarmaExpres Micro Gateway](https://github.com/jose6668/FarmaExpres_Micro_Gateway.git)
+    - 🔗 [FarmaExpres Micro Inventory](https://github.com/jose6668/FarmaExpres_Micro_Inventory.git)
+    - 🔗 [FarmaExpres Micro Login](https://github.com/jose6668/FarmaExpres_Micro_Login.git)
+
+    Breves descripciones:
+
+    - **FarmaExpres Micro Gateway:** puerta de enlace y orquestador entre el frontend y los microservicios; maneja enrutamiento, balanceo ligero, y políticas de autenticación.
+    - **FarmaExpres Micro Inventory:** servicio encargado de la gestión de inventario, incluyendo productos, lotes, existencias y movimientos (entradas/salidas).
+    - **FarmaExpres Micro Login:** servicio de autenticación y autorización; gestión de usuarios, sesiones y emisión/validación de tokens.
+
 ---
 
 ### API
