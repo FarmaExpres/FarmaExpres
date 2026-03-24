@@ -15,6 +15,7 @@ Proyecto principal del ecosistema FarmaExpres.
 - [Beneficios del Sistema](#beneficios)
 - [Valor para el Negocio](#valor-negocio)
 - [Arquitectura General](#arquitectura-general)
+- [Contexto Frontend](#contexto-frontend)
 - [Estructura del Ecosistema](#estructura-del-ecosistema)
 - [Stack Tecnológico](#stack-tecnologico)
 - [Requisitos del Entorno](#requisitos-del-entorno)
@@ -167,6 +168,61 @@ FarmaExpres está dividido por responsabilidades:
 
 ---
 
+<a id="contexto-frontend"></a>
+
+## Contexto Frontend
+
+El frontend de FarmaExpres corresponde al **portal web** del sistema y está orientado a una arquitectura modular por dominio, con separación de responsabilidades entre vistas, componentes y servicios.
+
+### Propósito funcional
+
+El frontend está diseñado para cubrir la interacción de usuarios con los procesos clave del negocio:
+
+- Gestión de usuarios y permisos.
+- Gestión de medicamentos.
+- Control de inventario.
+- Registro y consulta de movimientos.
+- Visualización de alertas, reportes y auditoría.
+
+### Estructura técnica del frontend
+
+Organización principal dentro del portal:
+
+```bash
+frontend/src/
+├── layout/
+├── medicines/
+├── users/
+└── shared/
+```
+
+Cada módulo se organiza bajo una estructura tipo:
+
+```bash
+<module>/
+├── pages/
+├── components/
+└── services/
+```
+
+### Visión de implementación frontend
+
+La implementación final del portal se plantea con una experiencia modular, orientada por roles y centrada en procesos operativos de farmacia.
+
+El frontend deberá:
+
+- Integrar autenticación y navegación por permisos.
+- Unificar la experiencia de gestión de usuarios, medicamentos e inventario.
+- Soportar trazabilidad operativa mediante movimientos, reportes y auditoría.
+- Presentar indicadores y alertas para apoyar decisiones en tiempo real.
+- Mantener coherencia visual y funcional entre todos los módulos del sistema.
+
+### Referencias externas frontend
+
+- Demo visual del portal: [FarmaExpres Demo](https://temenico.my.canva.site/farmaexpres)
+
+---
+
 
 <a id="estructura-del-ecosistema"></a>
 
@@ -177,7 +233,7 @@ El proyecto FarmaExpres está organizado en varios repositorios que separan las 
 ### Frontend (Portal)
 Interfaz de usuario de la aplicación.
 
-🔗 [FarmaExpres Portal](https://github.com/Temenico/FarmaExpres-portal)
+🔗 [FarmaExpres Frontend](https://github.com/Temenico/FarmaExpres-portal)
 
 ---
 
@@ -226,6 +282,14 @@ Registro del progreso del proyecto por semanas.
 <a id="stack-tecnologico"></a>
 
 ## Stack Tecnológico
+
+### Frontend
+- React  
+- Vite  
+- JavaScript (ES Modules)  
+- Axios  
+- Tailwind CSS  
+- Docker + Nginx  
 
 ### Backend
 - Java  
