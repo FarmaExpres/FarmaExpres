@@ -15,6 +15,7 @@ Proyecto principal del ecosistema FarmaExpres.
 - [Beneficios del Sistema](#beneficios)
 - [Valor para el Negocio](#valor-negocio)
 - [Arquitectura General](#arquitectura-general)
+- [Contexto Frontend](#contexto-frontend)
 - [Estructura del Ecosistema](#estructura-del-ecosistema)
 - [Stack Tecnológico](#stack-tecnologico)
 - [Requisitos del Entorno](#requisitos-del-entorno)
@@ -167,6 +168,61 @@ FarmaExpres está dividido por responsabilidades:
 
 ---
 
+<a id="contexto-frontend"></a>
+
+## Contexto Frontend
+
+El frontend de FarmaExpres corresponde al **portal web** del sistema y está orientado a una arquitectura modular por dominio, con separación de responsabilidades entre vistas, componentes y servicios.
+
+### Propósito funcional
+
+El frontend está diseñado para cubrir la interacción de usuarios con los procesos clave del negocio:
+
+- Gestión de usuarios y permisos.
+- Gestión de medicamentos.
+- Control de inventario.
+- Registro y consulta de movimientos.
+- Visualización de alertas, reportes y auditoría.
+
+### Estructura técnica del frontend
+
+Organización principal dentro del portal:
+
+```bash
+frontend/src/
+├── layout/
+├── medicines/
+├── users/
+└── shared/
+```
+
+Cada módulo se organiza bajo una estructura tipo:
+
+```bash
+<module>/
+├── pages/
+├── components/
+└── services/
+```
+
+### Visión de implementación frontend
+
+La implementación final del portal se plantea con una experiencia modular, orientada por roles y centrada en procesos operativos de farmacia.
+
+El frontend deberá:
+
+- Integrar autenticación y navegación por permisos.
+- Unificar la experiencia de gestión de usuarios, medicamentos e inventario.
+- Soportar trazabilidad operativa mediante movimientos, reportes y auditoría.
+- Presentar indicadores y alertas para apoyar decisiones en tiempo real.
+- Mantener coherencia visual y funcional entre todos los módulos del sistema.
+
+### Referencias externas frontend
+
+- Demo visual del portal: [FarmaExpres Demo](https://temenico.my.canva.site/farmaexpres)
+
+---
+
 
 <a id="estructura-del-ecosistema"></a>
 
@@ -177,7 +233,7 @@ El proyecto FarmaExpres está organizado en varios repositorios que separan las 
 ### Frontend (Portal)
 Interfaz de usuario de la aplicación.
 
-🔗 [FarmaExpres Portal](https://github.com/Temenico/FarmaExpres-portal)
+🔗 [FarmaExpres Frontend](https://github.com/Temenico/FarmaExpres-Frontend)
 
 ---
 
@@ -237,6 +293,14 @@ Registro del progreso del proyecto por semanas.
 <a id="stack-tecnologico"></a>
 
 ## Stack Tecnológico
+
+### Frontend
+- React  
+- Vite  
+- JavaScript (ES Modules)  
+- Axios  
+- Tailwind CSS  
+- Docker + Nginx  
 
 ### Backend
 - Java  
@@ -307,7 +371,7 @@ El proyecto evoluciona bajo un enfoque incremental.
 **Fórmula:**  
 Participación (%) = (commits únicos del integrante / commits únicos totales del ecosistema) × 100
 
-**Última actualización:** 2026-03-20 14:29 UTC
+**Última actualización:** 2026-03-24 20:02 UTC
 
 **Cobertura del KPI:** todos los commits detectados en todas las ramas de todos los repositorios configurados, deduplicados por SHA.
 
@@ -315,10 +379,10 @@ Participación (%) = (commits únicos del integrante / commits únicos totales d
 
 | Integrante | Commits únicos | Participación | Repos | Ramas |
 |---|---:|---:|---:|---:|
-| José Leonardo Vargas | 72 | 41.14% | 5 | 16 |
-| Jersson Fabián Buitrago | 69 | 39.43% | 4 | 11 |
-| Marlon David Romero | 20 | 11.43% | 6 | 10 |
-| Nicolás Tello | 14 | 8.00% | 3 | 8 |
+| José Leonardo Vargas | 74 | 34.58% | 5 | 17 |
+| Jersson Fabián Buitrago | 71 | 33.18% | 4 | 11 |
+| Nicolás Tello | 49 | 22.90% | 3 | 11 |
+| Marlon David Romero | 20 | 9.35% | 6 | 10 |
 
 ### Gráfico de torta
 
@@ -326,10 +390,10 @@ Participación (%) = (commits únicos del integrante / commits únicos totales d
 %%{init: {"themeVariables": {"pie1": "#ff6f61", "pie2": "#3498db", "pie3": "#f1c40f", "pie4": "#1abc9c", "pieLabelColor": "#000000", "pieLabelFontSize": "24px", "pieLabelFontWeight": "700"}}}%%
 pie showData
     title Participación del grupo de trabajo
-    "José Leonardo Vargas" : 72
-    "Jersson Fabián Buitrago" : 69
+    "José Leonardo Vargas" : 74
+    "Jersson Fabián Buitrago" : 71
+    "Nicolás Tello" : 49
     "Marlon David Romero" : 20
-    "Nicolás Tello" : 14
 ```
 
 ### Gráfico de barras
@@ -337,8 +401,8 @@ pie showData
 ```mermaid
 xychart-beta
     title "Participación del grupo de trabajo"
-    x-axis ["José Leonardo Vargas", "Jersson Fabián Buitrago", "Marlon David Romero", "Nicolás Tello"]
-    y-axis "Commits únicos" 0 --> 72
-    bar [72, 69, 20, 14]
+    x-axis ["José Leonardo Vargas", "Jersson Fabián Buitrago", "Nicolás Tello", "Marlon David Romero"]
+    y-axis "Commits únicos" 0 --> 74
+    bar [74, 71, 49, 20]
 ```
 <!-- KPI:END -->
