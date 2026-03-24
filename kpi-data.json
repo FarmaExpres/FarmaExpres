@@ -1,7 +1,30 @@
 {
-  "generated_at": "2026-03-24T20:02:26.247077+00:00",
-  "total_unique_commits": 400,
+  "generated_at": "2026-03-24T20:22:27.451984+00:00",
+  "total_unique_commits": 404,
   "participants": {
+    "JerssonF": {
+      "display_name": "Jersson Fabián Buitrago",
+      "commits": 74,
+      "repos": [
+        "jose6668/FarmaExpres",
+        "jose6668/FarmaExpres-Doc",
+        "jose6668/FarmaExpres-Weeks",
+        "jose6668/FarmaExpres_Backend"
+      ],
+      "branches": [
+        "jose6668/FarmaExpres-Doc:main",
+        "jose6668/FarmaExpres-Weeks:Develop",
+        "jose6668/FarmaExpres-Weeks:main",
+        "jose6668/FarmaExpres:main",
+        "jose6668/FarmaExpres:prueba-kpi",
+        "jose6668/FarmaExpres_Backend:HU-ADR-017-dev",
+        "jose6668/FarmaExpres_Backend:HU-ADR-11-dev",
+        "jose6668/FarmaExpres_Backend:HU-ADR-12-qa",
+        "jose6668/FarmaExpres_Backend:HU-ADR-15-dev",
+        "jose6668/FarmaExpres_Backend:develop",
+        "jose6668/FarmaExpres_Backend:qa"
+      ]
+    },
     "Temenico": {
       "display_name": "Nicolás Tello",
       "commits": 49,
@@ -22,29 +45,6 @@
         "jose6668/FarmaExpres_Backend:HU-ADR-06-qa",
         "jose6668/FarmaExpres_Backend:HU-ADR-11-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-12-qa"
-      ]
-    },
-    "JerssonF": {
-      "display_name": "Jersson Fabián Buitrago",
-      "commits": 71,
-      "repos": [
-        "jose6668/FarmaExpres",
-        "jose6668/FarmaExpres-Doc",
-        "jose6668/FarmaExpres-Weeks",
-        "jose6668/FarmaExpres_Backend"
-      ],
-      "branches": [
-        "jose6668/FarmaExpres-Doc:main",
-        "jose6668/FarmaExpres-Weeks:Develop",
-        "jose6668/FarmaExpres-Weeks:main",
-        "jose6668/FarmaExpres:main",
-        "jose6668/FarmaExpres:prueba-kpi",
-        "jose6668/FarmaExpres_Backend:HU-ADR-017-dev",
-        "jose6668/FarmaExpres_Backend:HU-ADR-11-dev",
-        "jose6668/FarmaExpres_Backend:HU-ADR-12-qa",
-        "jose6668/FarmaExpres_Backend:HU-ADR-15-dev",
-        "jose6668/FarmaExpres_Backend:develop",
-        "jose6668/FarmaExpres_Backend:qa"
       ]
     },
     "jose6668": {
@@ -105,7 +105,7 @@
   "repos": {
     "jose6668/FarmaExpres": {
       "branches": 3,
-      "commits": 50
+      "commits": 53
     },
     "Temenico/FarmaExpres-portal": {
       "branches": 19,
