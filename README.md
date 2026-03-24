@@ -233,7 +233,7 @@ El proyecto FarmaExpres está organizado en varios repositorios que separan las 
 ### Frontend (Portal)
 Interfaz de usuario de la aplicación.
 
-🔗 [FarmaExpres Frontend](https://github.com/Temenico/FarmaExpres-portal)
+🔗 [FarmaExpres Frontend](https://github.com/Temenico/FarmaExpres-Frontend)
 
 ---
 
