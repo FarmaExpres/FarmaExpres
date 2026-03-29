@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-29T19:36:54.698362+00:00",
-  "total_unique_commits": 518,
+  "generated_at": "2026-03-29T20:32:22.792035+00:00",
+  "total_unique_commits": 520,
   "participants": {
     "JerssonF": {
       "display_name": "Jersson Fabián Buitrago",
@@ -39,17 +39,15 @@
         "Temenico/FarmaExpres-portal:HU-FE03-qa",
         "Temenico/FarmaExpres-portal:QA",
         "jose6668/FarmaExpres:main",
-        "jose6668/FarmaExpres_Backend:HU-ADR-05-dev",
+        "jose6668/FarmaExpres_Backend:HU-AC-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-05-qa",
-        "jose6668/FarmaExpres_Backend:HU-ADR-06-develop",
         "jose6668/FarmaExpres_Backend:HU-ADR-06-qa",
-        "jose6668/FarmaExpres_Backend:HU-ADR-11-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-12-qa"
       ]
     },
     "jose6668": {
       "display_name": "José Leonardo Vargas",
-      "commits": 74,
+      "commits": 75,
       "repos": [
         "jose6668/FarmaExpres",
         "jose6668/FarmaExpres-Diagramas",
@@ -62,15 +60,11 @@
         "jose6668/FarmaExpres-Doc:main",
         "jose6668/FarmaExpres-Weeks:Develop",
         "jose6668/FarmaExpres:main",
-        "jose6668/FarmaExpres_Backend:HU-ADR-01-dev",
+        "jose6668/FarmaExpres_Backend:HU-AC-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-01-qa",
-        "jose6668/FarmaExpres_Backend:HU-ADR-02-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-02-qa",
-        "jose6668/FarmaExpres_Backend:HU-ADR-03-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-03-qa",
-        "jose6668/FarmaExpres_Backend:HU-ADR-05-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-05-qa",
-        "jose6668/FarmaExpres_Backend:HU-ADR-06-develop",
         "jose6668/FarmaExpres_Backend:HU-ADR-06-qa",
         "jose6668/FarmaExpres_Backend:HU-dev-Realaese.1",
         "jose6668/FarmaExpres_Backend:HU-doc-dev",
@@ -117,8 +111,8 @@
       "commits": 34
     },
     "jose6668/FarmaExpres_Backend": {
-      "branches": 34,
-      "commits": 74
+      "branches": 35,
+      "commits": 75
     },
     "Marlon271/FarmaExpres-api": {
       "branches": 4,
