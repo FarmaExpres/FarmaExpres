@@ -7,6 +7,7 @@ from collections import defaultdict
 from datetime import datetime, timezone
 
 import requests
+import re
 
 API = "https://api.github.com"
 
@@ -83,6 +84,71 @@ def is_bot(author_key, commit):
 def load_config(path):
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
+
+
+def save_config(path, data):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+
+def resolve_repo_branches(api, full_repo, headers):
+    """Intentar obtener ramas del repo. Si falla, probar variantes comunes.
+
+    Devuelve la lista de branches o lanza la excepción original si no se puede.
+    """
+    try:
+        return list_branches(api, full_repo, headers)
+    except Exception:
+        # Probar reemplazando _ por - y viceversa
+        alt = None
+        if "_" in full_repo:
+            alt = full_repo.replace("_", "-")
+        elif "-" in full_repo:
+            alt = full_repo.replace("-", "_")
+
+        if alt:
+            try:
+                branches = list_branches(api, alt, headers)
+                logging.info("Resolví %s a %s", full_repo, alt)
+                return branches
+            except Exception:
+                pass
+        # Re-lanzar la excepción original
+        raise
+
+
+def discover_repos_from_files(root_dir="."):
+    """Buscar enlaces a repositorios GitHub en archivos de texto del árbol de trabajo.
+
+    Devuelve una lista de strings en formato 'owner/repo' encontrados. Maneja URLs
+    con sufijo `.git`, con rutas adicionales y con formatos SSH (github.com:owner/repo).
+    """
+    # Captura owner y repo aun cuando la URL tenga ruta adicional o termine en .git
+    pattern = re.compile(r"github\.com[:/]+([A-Za-z0-9_.-]+)/([A-Za-z0-9_.-]+)", re.IGNORECASE)
+    exts = (".md", ".txt", ".rst", ".json", ".yml", ".yaml", ".py")
+    found = []
+    for dirpath, dirnames, filenames in os.walk(root_dir):
+        for fname in filenames:
+            if not fname.lower().endswith(exts):
+                continue
+            path = os.path.join(dirpath, fname)
+            try:
+                with open(path, "r", encoding="utf-8", errors="ignore") as fh:
+                    text = fh.read()
+            except Exception:
+                continue
+
+            for owner, repo in pattern.findall(text):
+                # Normalizar: quitar sufijo .git si existe y strip de barras
+                repo = repo.rstrip("/\n\r\t")
+                if repo.lower().endswith(".git"):
+                    repo = repo[:-4]
+                repo_key = f"{owner}/{repo}"
+                repo_key_norm = repo_key.strip()
+                if repo_key_norm and repo_key_norm not in found:
+                    found.append(repo_key_norm)
+
+    return found
 
 
 def build_report(data):
@@ -183,6 +249,26 @@ def run(cfg_path, output_json, readme_file, token, dry_run=False):
     repos = cfg["repos"]
     aliases = cfg.get("aliases", {})
 
+    # Intentar descubrir automáticamente repositorios añadidos como enlaces
+    try:
+        discovered = discover_repos_from_files(os.getcwd())
+        if discovered:
+            logging.info("Repositorios descubiertos en archivos: %s", discovered)
+            # agregar los descubiertos que no estén ya en la configuración, manteniendo el orden
+            new_repos = [r for r in discovered if r not in repos]
+            if new_repos:
+                repos = repos + new_repos
+                # Persistir la configuración actualizada para que sea automático la próxima vez
+                try:
+                    cfg_obj = load_config(cfg_path)
+                    cfg_obj.setdefault("repos", repos)
+                    save_config(cfg_path, cfg_obj)
+                    logging.info("Guardada configuración actualizada en %s", cfg_path)
+                except Exception:
+                    logging.debug("No se pudo guardar kpi-repos.json automáticamente", exc_info=True)
+    except Exception:
+        logging.debug("No se pudieron descubrir repositorios automáticos", exc_info=True)
+
     headers = {
         "Accept": "application/vnd.github+json",
         "X-GitHub-Api-Version": "2022-11-28",
@@ -201,31 +287,37 @@ def run(cfg_path, output_json, readme_file, token, dry_run=False):
     repo_summary = {}
 
     for full_repo in repos:
-        logging.info("Listing branches for %s", full_repo)
-        branches = list_branches(API, full_repo, headers)
-        repo_summary[full_repo] = {"branches": len(branches), "commits": 0}
+        try:
+            logging.info("Listing branches for %s", full_repo)
+            branches = resolve_repo_branches(API, full_repo, headers)
+            repo_summary[full_repo] = {"branches": len(branches), "commits": 0}
 
-        for branch in branches:
-            logging.debug("Listing commits for %s@%s", full_repo, branch)
-            commits = list_commits(API, full_repo, branch, headers)
+            for branch in branches:
+                logging.debug("Listing commits for %s@%s", full_repo, branch)
+                commits = list_commits(API, full_repo, branch, headers)
+                
+                for commit in commits:
+                    sha = commit["sha"]
+                    if sha in seen_shas:
+                        continue
 
-            for commit in commits:
-                sha = commit["sha"]
-                if sha in seen_shas:
-                    continue
+                    seen_shas.add(sha)
+                    author_key = normalize_author(commit)
+                    author_key = aliases.get(author_key, author_key)
 
-                seen_shas.add(sha)
-                author_key = normalize_author(commit)
-                author_key = aliases.get(author_key, author_key)
+                    if is_bot(author_key, commit):
+                        continue
 
-                if is_bot(author_key, commit):
-                    continue
-
-                participants[author_key]["commits"] += 1
-                participants[author_key]["repos"].add(full_repo)
-                participants[author_key]["branches"].add(f"{full_repo}:{branch}")
-                participants[author_key]["display_name"] = team.get(author_key, author_key)
-                repo_summary[full_repo]["commits"] += 1
+                    participants[author_key]["commits"] += 1
+                    participants[author_key]["repos"].add(full_repo)
+                    participants[author_key]["branches"].add(f"{full_repo}:{branch}")
+                    participants[author_key]["display_name"] = team.get(author_key, author_key)
+                    repo_summary[full_repo]["commits"] += 1
+        except Exception as e:
+            logging.exception("Error procesando %s: %s", full_repo, e)
+            # continuar con el siguiente repo en caso de error
+            continue
+    # end for repos
 
     serializable = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
