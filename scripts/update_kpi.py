@@ -337,6 +337,10 @@ def run(cfg_path, output_json, readme_file, token, dry_run=False):
                     author_key = normalize_author(commit)
                     author_key = aliases.get(author_key, author_key)
 
+                    # Skip any bot authors completely (do not register repos/branches)
+                    if is_bot(author_key, commit):
+                        continue
+
                     # register participant repos/branches and per-branch counts
                     participants[author_key]["repos"].add(full_repo)
                     participants[author_key]["branches"].add(f"{full_repo}:{branch}")
@@ -356,17 +360,19 @@ def run(cfg_path, output_json, readme_file, token, dry_run=False):
             continue
     # end for repos
 
+    # Limitar participantes a los miembros listados en la configuración `team`
     serializable = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "total_unique_commits": len(seen_shas),
         "participants": {
             k: {
-                "display_name": v["display_name"] or k,
+                "display_name": team.get(k, v["display_name"] or k),
                 "commits": v["commits"],
                 "repos": sorted(v["repos"]),
                 "branches": sorted(v["branches"]),
             }
             for k, v in participants.items()
+            if k in team and "[bot]" not in k.lower()
         },
         "repos": repo_summary,
     }

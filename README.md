@@ -371,7 +371,7 @@ El proyecto evoluciona bajo un enfoque incremental.
 **Fórmula:**  
 Participación (%) = (commits únicos del integrante / commits únicos totales del ecosistema) × 100
 
-**Última actualización:** 2026-03-30 17:28 UTC
+**Última actualización:** 2026-03-30 17:59 UTC
 
 **Cobertura del KPI:** todos los commits detectados en todas las ramas de todos los repositorios configurados, deduplicados por SHA.
 
@@ -379,23 +379,21 @@ Participación (%) = (commits únicos del integrante / commits únicos totales d
 
 | Integrante | Commits únicos | Participación | Repos | Ramas |
 |---|---:|---:|---:|---:|
-| José Leonardo Vargas | 119 | 42.65% | 8 | 71 |
-| Jersson Fabián Buitrago | 77 | 27.60% | 4 | 23 |
-| Nicolás Tello | 54 | 19.35% | 4 | 70 |
-| Marlon David Romero | 29 | 10.39% | 6 | 24 |
-| github-actions[bot] | 0 | 0.00% | 1 | 3 |
+| Nicolás Tello | 48 | 37.21% | 3 | 25 |
+| Jersson Fabián Buitrago | 46 | 35.66% | 1 | 3 |
+| José Leonardo Vargas | 33 | 25.58% | 2 | 6 |
+| Marlon David Romero | 2 | 1.55% | 1 | 3 |
 
 ### Gráfico de torta
 
 ```mermaid
-%%{init: {"themeVariables": {"pie1": "#ff6f61", "pie2": "#3498db", "pie3": "#f1c40f", "pie4": "#1abc9c", "pie5": "#e67e22", "pieLabelColor": "#000000", "pieLabelFontSize": "24px", "pieLabelFontWeight": "700"}}}%%
+%%{init: {"themeVariables": {"pie1": "#ff6f61", "pie2": "#3498db", "pie3": "#f1c40f", "pie4": "#1abc9c", "pieLabelColor": "#000000", "pieLabelFontSize": "24px", "pieLabelFontWeight": "700"}}}%%
 pie showData
     title Participación del grupo de trabajo
-    "José Leonardo Vargas" : 119
-    "Jersson Fabián Buitrago" : 77
-    "Nicolás Tello" : 54
-    "Marlon David Romero" : 29
-    "github-actions[bot]" : 0
+    "Nicolás Tello" : 48
+    "Jersson Fabián Buitrago" : 46
+    "José Leonardo Vargas" : 33
+    "Marlon David Romero" : 2
 ```
 
 ### Gráfico de barras
@@ -403,8 +401,8 @@ pie showData
 ```mermaid
 xychart-beta
     title "Participación del grupo de trabajo"
-    x-axis ["José Leonardo Vargas", "Jersson Fabián Buitrago", "Nicolás Tello", "Marlon David Romero", "github-actions[bot]"]
-    y-axis "Commits únicos" 0 --> 119
-    bar [119, 77, 54, 29, 0]
+    x-axis ["Nicolás Tello", "Jersson Fabián Buitrago", "José Leonardo Vargas", "Marlon David Romero"]
+    y-axis "Commits únicos" 0 --> 48
+    bar [48, 46, 33, 2]
 ```
 <!-- KPI:END -->
