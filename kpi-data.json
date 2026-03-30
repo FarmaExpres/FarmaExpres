@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-03-30T14:49:56.547934+00:00",
-  "total_unique_commits": 536,
+  "generated_at": "2026-03-30T15:54:49.010872+00:00",
+  "total_unique_commits": 582,
   "participants": {
     "JerssonF": {
       "display_name": "Jersson Fabián Buitrago",
-      "commits": 74,
+      "commits": 75,
       "repos": [
         "jose6668/FarmaExpres",
         "jose6668/FarmaExpres-Doc",
@@ -47,13 +47,16 @@
     },
     "jose6668": {
       "display_name": "José Leonardo Vargas",
-      "commits": 75,
+      "commits": 119,
       "repos": [
         "jose6668/FarmaExpres",
         "jose6668/FarmaExpres-Diagramas",
         "jose6668/FarmaExpres-Doc",
         "jose6668/FarmaExpres-Weeks",
-        "jose6668/FarmaExpres_Backend"
+        "jose6668/FarmaExpres_Backend",
+        "jose6668/FarmaExpres_Micro_Gateway",
+        "jose6668/FarmaExpres_Micro_Inventory",
+        "jose6668/FarmaExpres_Micro_Login"
       ],
       "branches": [
         "jose6668/FarmaExpres-Diagramas:main",
@@ -68,7 +71,18 @@
         "jose6668/FarmaExpres_Backend:HU-ADR-06-qa",
         "jose6668/FarmaExpres_Backend:HU-dev-Realaese.1",
         "jose6668/FarmaExpres_Backend:HU-doc-dev",
-        "jose6668/FarmaExpres_Backend:Realease.1"
+        "jose6668/FarmaExpres_Backend:Realease.1",
+        "jose6668/FarmaExpres_Micro_Gateway:HU-doc-dev",
+        "jose6668/FarmaExpres_Micro_Inventory:HU-BE-11-dev",
+        "jose6668/FarmaExpres_Micro_Inventory:HU-BE-11-qa",
+        "jose6668/FarmaExpres_Micro_Inventory:HU-BE-12-dev",
+        "jose6668/FarmaExpres_Micro_Inventory:HU-BE-12-qa",
+        "jose6668/FarmaExpres_Micro_Inventory:develop",
+        "jose6668/FarmaExpres_Micro_Inventory:qa",
+        "jose6668/FarmaExpres_Micro_Login:HU-BE-11-dev",
+        "jose6668/FarmaExpres_Micro_Login:HU-BE-11-qa",
+        "jose6668/FarmaExpres_Micro_Login:develop",
+        "jose6668/FarmaExpres_Micro_Login:qa"
       ]
     },
     "Marlon271": {
@@ -104,7 +118,7 @@
   "repos": {
     "jose6668/FarmaExpres": {
       "branches": 3,
-      "commits": 53
+      "commits": 54
     },
     "Temenico/FarmaExpres-portal": {
       "branches": 21,
@@ -112,7 +126,7 @@
     },
     "jose6668/FarmaExpres_Backend": {
       "branches": 35,
-      "commits": 76
+      "commits": 77
     },
     "Marlon271/FarmaExpres-api": {
       "branches": 4,
@@ -133,6 +147,22 @@
     "jose6668/FarmaExpres-Weeks": {
       "branches": 4,
       "commits": 24
+    },
+    "Temenico/FarmaExpres-Frontend": {
+      "branches": 21,
+      "commits": 0
+    },
+    "jose6668/FarmaExpres_Micro_Gateway": {
+      "branches": 5,
+      "commits": 2
+    },
+    "jose6668/FarmaExpres_Micro_Inventory": {
+      "branches": 12,
+      "commits": 20
+    },
+    "jose6668/FarmaExpres_Micro_Login": {
+      "branches": 10,
+      "commits": 21
     }
   }
 }
