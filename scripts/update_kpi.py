@@ -277,42 +277,79 @@ def run(cfg_path, output_json, readme_file, token, dry_run=False):
         headers["Authorization"] = f"Bearer {token}"
 
     seen_shas = set()
+    # track seen SHAs per repo/branch to avoid double-counting within same branch
+    seen_shas_branch = set()
     participants = defaultdict(lambda: {
         "commits": 0,
         "repos": set(),
         "branches": set(),
+        "by_branch": defaultdict(int),
         "display_name": "",
     })
 
     repo_summary = {}
 
+    # branch filtering and classification
+    branch_filter = cfg.get("branch_filter_regex")
+    import re as _re
+    branch_filter_re = _re.compile(branch_filter) if branch_filter else None
+
+    def classify_branch(name: str) -> str:
+        n = name.lower()
+        if "main" in n or "master" in n:
+            return "main"
+        if "dev" in n or "develop" in n:
+            return "dev"
+        if "qa" in n or "quality" in n:
+            return "qa"
+        return name
+
     for full_repo in repos:
         try:
             logging.info("Listing branches for %s", full_repo)
             branches = resolve_repo_branches(API, full_repo, headers)
-            repo_summary[full_repo] = {"branches": len(branches), "commits": 0}
+            repo_summary[full_repo] = {"branches": len(branches), "commits": 0, "by_branch": {} }
 
             for branch in branches:
+                # apply optional branch filter
+                if branch_filter_re and not branch_filter_re.search(branch):
+                    logging.debug("Skipping branch %s@%s due to branch_filter", full_repo, branch)
+                    continue
+
                 logging.debug("Listing commits for %s@%s", full_repo, branch)
                 commits = list_commits(API, full_repo, branch, headers)
-                
+
+                # ensure per-branch count map exists
+                repo_summary[full_repo]["by_branch"].setdefault(branch, 0)
+
                 for commit in commits:
                     sha = commit["sha"]
-                    if sha in seen_shas:
-                        continue
 
-                    seen_shas.add(sha)
+                    # per-branch unique key to avoid double-count when API returns duplicates
+                    key_branch = (sha, full_repo, branch)
+                    if key_branch in seen_shas_branch:
+                        continue
+                    seen_shas_branch.add(key_branch)
+
+                    # Count per-branch (counts the commit in each branch it appears)
+                    repo_summary[full_repo]["by_branch"][branch] += 1
+
                     author_key = normalize_author(commit)
                     author_key = aliases.get(author_key, author_key)
 
-                    if is_bot(author_key, commit):
-                        continue
-
-                    participants[author_key]["commits"] += 1
+                    # register participant repos/branches and per-branch counts
                     participants[author_key]["repos"].add(full_repo)
                     participants[author_key]["branches"].add(f"{full_repo}:{branch}")
                     participants[author_key]["display_name"] = team.get(author_key, author_key)
-                    repo_summary[full_repo]["commits"] += 1
+                    participants[author_key]["by_branch"][f"{full_repo}:{branch}"] += 1
+
+                    # global unique commit used for participant total and overall count
+                    if sha not in seen_shas:
+                        if is_bot(author_key, commit):
+                            continue
+                        seen_shas.add(sha)
+                        participants[author_key]["commits"] += 1
+                        repo_summary[full_repo]["commits"] += 1
         except Exception as e:
             logging.exception("Error procesando %s: %s", full_repo, e)
             # continuar con el siguiente repo en caso de error
