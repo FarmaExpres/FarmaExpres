@@ -1,0 +1,9 @@
+﻿feat(kpi): detectar repositorios automáticamente y añadir desglose por rama
+
+- Escanea archivos del repo (.md, .json, .yml, .py, etc.) para encontrar enlaces a GitHub y construir la lista normalizada owner/repo.
+- Normaliza URLs (.git, barras finales, SSH) y elimina duplicados.
+- Intenta variantes comunes (guion ↔ guion_bajo) al resolver ramas.
+- Añade desglose por rama: repos[repo]["by_branch"] y participants[user]["by_branch"].
+- Añade filtro opcional branch_filter_regex en kpi-repos.json.
+- Deduplicación global por SHA y conteo por rama; errores por repo no abortan.
+- Mejora --dry-run y logging. Recomendado usar KPI_GH_TOKEN para CI.
