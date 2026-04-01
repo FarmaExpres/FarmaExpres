@@ -371,7 +371,7 @@ El proyecto evoluciona bajo un enfoque incremental.
 **Fórmula:**  
 Participación (%) = (commits únicos del integrante / commits únicos totales del ecosistema) × 100
 
-**Última actualización:** 2026-03-31 23:41 UTC
+**Última actualización:** 2026-04-01 02:33 UTC
 
 **Cobertura del KPI:** todos los commits detectados en todas las ramas de todos los repositorios configurados, deduplicados por SHA.
 
@@ -379,10 +379,10 @@ Participación (%) = (commits únicos del integrante / commits únicos totales d
 
 | Integrante | Commits únicos | Participación | Repos | Ramas |
 |---|---:|---:|---:|---:|
-| José Leonardo Vargas | 124 | 43.51% | 9 | 72 |
-| Jersson Fabián Buitrago | 78 | 27.37% | 4 | 23 |
-| Nicolás Tello | 54 | 18.95% | 4 | 70 |
-| Marlon David Romero | 29 | 10.18% | 6 | 25 |
+| José Leonardo Vargas | 129 | 44.33% | 9 | 73 |
+| Jersson Fabián Buitrago | 78 | 26.80% | 4 | 25 |
+| Nicolás Tello | 55 | 18.90% | 4 | 71 |
+| Marlon David Romero | 29 | 9.97% | 6 | 27 |
 
 ### Gráfico de torta
 
@@ -390,9 +390,9 @@ Participación (%) = (commits únicos del integrante / commits únicos totales d
 %%{init: {"themeVariables": {"pie1": "#ff6f61", "pie2": "#3498db", "pie3": "#f1c40f", "pie4": "#1abc9c", "pieLabelColor": "#000000", "pieLabelFontSize": "24px", "pieLabelFontWeight": "700"}}}%%
 pie showData
     title Participación del grupo de trabajo
-    "José Leonardo Vargas" : 124
+    "José Leonardo Vargas" : 129
     "Jersson Fabián Buitrago" : 78
-    "Nicolás Tello" : 54
+    "Nicolás Tello" : 55
     "Marlon David Romero" : 29
 ```
 
@@ -402,7 +402,7 @@ pie showData
 xychart-beta
     title "Participación del grupo de trabajo"
     x-axis ["José Leonardo Vargas", "Jersson Fabián Buitrago", "Nicolás Tello", "Marlon David Romero"]
-    y-axis "Commits únicos" 0 --> 124
-    bar [124, 78, 54, 29]
+    y-axis "Commits únicos" 0 --> 129
+    bar [129, 78, 55, 29]
 ```
 <!-- KPI:END -->
