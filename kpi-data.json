@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-02T14:02:28.461179+00:00",
-  "total_unique_commits": 297,
+  "generated_at": "2026-04-02T15:35:21.618166+00:00",
+  "total_unique_commits": 304,
   "participants": {
     "JerssonF": {
       "display_name": "Jersson Fabián Buitrago",
@@ -21,8 +21,10 @@
         "jose6668/FarmaExpres:origin",
         "jose6668/FarmaExpres:prueba-kpi",
         "jose6668/FarmaExpres_Backend:HU-AC-dev",
+        "jose6668/FarmaExpres_Backend:HU-AC-qa",
         "jose6668/FarmaExpres_Backend:HU-AC01-dev",
         "jose6668/FarmaExpres_Backend:HU-ACFE-01-dev",
+        "jose6668/FarmaExpres_Backend:HU-ACFE-01-qa",
         "jose6668/FarmaExpres_Backend:HU-ADR-017-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-017-qa",
         "jose6668/FarmaExpres_Backend:HU-ADR-018-dev",
@@ -36,13 +38,12 @@
         "jose6668/FarmaExpres_Backend:HU-ADR-12-qa",
         "jose6668/FarmaExpres_Backend:HU-ADR-15-dev",
         "jose6668/FarmaExpres_Backend:develop",
-        "jose6668/FarmaExpres_Backend:main",
         "jose6668/FarmaExpres_Backend:qa"
       ]
     },
     "Temenico": {
       "display_name": "Nicolás Tello",
-      "commits": 59,
+      "commits": 67,
       "repos": [
         "Temenico/FarmaExpres-Frontend",
         "Temenico/FarmaExpres-portal",
@@ -64,6 +65,7 @@
         "Temenico/FarmaExpres-Frontend:HU-FE06-dev",
         "Temenico/FarmaExpres-Frontend:HU-FE06-qa",
         "Temenico/FarmaExpres-Frontend:HU-FE07-dev",
+        "Temenico/FarmaExpres-Frontend:HU-FE07-qa",
         "Temenico/FarmaExpres-Frontend:HU-doc-dev",
         "Temenico/FarmaExpres-Frontend:HU-doc-qa",
         "Temenico/FarmaExpres-Frontend:HU-layout-dev",
@@ -85,6 +87,7 @@
         "Temenico/FarmaExpres-portal:HU-FE06-dev",
         "Temenico/FarmaExpres-portal:HU-FE06-qa",
         "Temenico/FarmaExpres-portal:HU-FE07-dev",
+        "Temenico/FarmaExpres-portal:HU-FE07-qa",
         "Temenico/FarmaExpres-portal:HU-doc-dev",
         "Temenico/FarmaExpres-portal:HU-doc-qa",
         "Temenico/FarmaExpres-portal:HU-layout-dev",
@@ -96,8 +99,10 @@
         "jose6668/FarmaExpres:origin",
         "jose6668/FarmaExpres:prueba-kpi",
         "jose6668/FarmaExpres_Backend:HU-AC-dev",
+        "jose6668/FarmaExpres_Backend:HU-AC-qa",
         "jose6668/FarmaExpres_Backend:HU-AC01-dev",
         "jose6668/FarmaExpres_Backend:HU-ACFE-01-dev",
+        "jose6668/FarmaExpres_Backend:HU-ACFE-01-qa",
         "jose6668/FarmaExpres_Backend:HU-ADR-017-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-017-qa",
         "jose6668/FarmaExpres_Backend:HU-ADR-018-dev",
@@ -120,7 +125,6 @@
         "jose6668/FarmaExpres_Backend:HU-ADR-15-dev",
         "jose6668/FarmaExpres_Backend:HU-doc-dev",
         "jose6668/FarmaExpres_Backend:develop",
-        "jose6668/FarmaExpres_Backend:main",
         "jose6668/FarmaExpres_Backend:qa"
       ]
     },
@@ -150,8 +154,10 @@
         "jose6668/FarmaExpres:origin",
         "jose6668/FarmaExpres:prueba-kpi",
         "jose6668/FarmaExpres_Backend:HU-AC-dev",
+        "jose6668/FarmaExpres_Backend:HU-AC-qa",
         "jose6668/FarmaExpres_Backend:HU-AC01-dev",
         "jose6668/FarmaExpres_Backend:HU-ACFE-01-dev",
+        "jose6668/FarmaExpres_Backend:HU-ACFE-01-qa",
         "jose6668/FarmaExpres_Backend:HU-ADR-01-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-01-qa",
         "jose6668/FarmaExpres_Backend:HU-ADR-017-dev",
@@ -217,7 +223,7 @@
     },
     "Marlon271": {
       "display_name": "Marlon David Romero",
-      "commits": 29,
+      "commits": 28,
       "repos": [
         "Marlon271/FarmaExpres-api",
         "Marlon271/FarmaExpres-database",
@@ -242,8 +248,10 @@
         "jose6668/FarmaExpres:origin",
         "jose6668/FarmaExpres:prueba-kpi",
         "jose6668/FarmaExpres_Backend:HU-AC-dev",
+        "jose6668/FarmaExpres_Backend:HU-AC-qa",
         "jose6668/FarmaExpres_Backend:HU-AC01-dev",
         "jose6668/FarmaExpres_Backend:HU-ACFE-01-dev",
+        "jose6668/FarmaExpres_Backend:HU-ACFE-01-qa",
         "jose6668/FarmaExpres_Backend:HU-ADR-017-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-017-qa",
         "jose6668/FarmaExpres_Backend:HU-ADR-018-dev",
@@ -253,7 +261,6 @@
         "jose6668/FarmaExpres_Backend:HU-ADR-020-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-020-qa",
         "jose6668/FarmaExpres_Backend:develop",
-        "jose6668/FarmaExpres_Backend:main",
         "jose6668/FarmaExpres_Backend:qa"
       ]
     }
@@ -263,16 +270,16 @@
       "branches": 3,
       "commits": 57,
       "by_branch": {
-        "main": 411,
+        "main": 412,
         "origin": 97,
         "prueba-kpi": 31
       }
     },
     "Temenico/FarmaExpres-portal": {
-      "branches": 21,
-      "commits": 39,
+      "branches": 22,
+      "commits": 43,
       "by_branch": {
-        "Develop": 20,
+        "Develop": 23,
         "HU-FE01-dev": 13,
         "HU-FE01-qa": 12,
         "HU-FE02-dev": 19,
@@ -285,23 +292,26 @@
         "HU-FE05-qa": 8,
         "HU-FE06-dev": 11,
         "HU-FE06-qa": 10,
-        "HU-FE07-dev": 21,
+        "HU-FE07-dev": 22,
+        "HU-FE07-qa": 20,
         "HU-doc-dev": 2,
         "HU-doc-qa": 2,
         "HU-layout-dev": 4,
         "HU-layout-qa": 4,
-        "QA": 19,
+        "QA": 21,
         "Realase.1": 1,
         "main": 1
       }
     },
     "jose6668/FarmaExpres_Backend": {
-      "branches": 37,
-      "commits": 90,
+      "branches": 39,
+      "commits": 93,
       "by_branch": {
         "HU-AC01-dev": 54,
         "HU-AC-dev": 50,
+        "HU-AC-qa": 31,
         "HU-ACFE-01-dev": 58,
+        "HU-ACFE-01-qa": 30,
         "HU-ADR-01-dev": 16,
         "HU-ADR-01-qa": 4,
         "HU-ADR-02-dev": 18,
@@ -334,8 +344,8 @@
         "HU-doc-dev": 30,
         "Realease.1": 3,
         "develop": 60,
-        "main": 28,
-        "qa": 27
+        "main": 1,
+        "qa": 31
       }
     },
     "Marlon271/FarmaExpres-api": {
@@ -384,10 +394,10 @@
       }
     },
     "Temenico/FarmaExpres-Frontend": {
-      "branches": 21,
+      "branches": 22,
       "commits": 0,
       "by_branch": {
-        "Develop": 20,
+        "Develop": 23,
         "HU-FE01-dev": 13,
         "HU-FE01-qa": 12,
         "HU-FE02-dev": 19,
@@ -400,12 +410,13 @@
         "HU-FE05-qa": 8,
         "HU-FE06-dev": 11,
         "HU-FE06-qa": 10,
-        "HU-FE07-dev": 21,
+        "HU-FE07-dev": 22,
+        "HU-FE07-qa": 20,
         "HU-doc-dev": 2,
         "HU-doc-qa": 2,
         "HU-layout-dev": 4,
         "HU-layout-qa": 4,
-        "QA": 19,
+        "QA": 21,
         "Realase.1": 1,
         "main": 1
       }
