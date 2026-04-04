@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-04T16:36:03.217450+00:00",
-  "total_unique_commits": 413,
+  "generated_at": "2026-04-04T17:30:57.134486+00:00",
+  "total_unique_commits": 416,
   "participants": {
     "JerssonF": {
       "display_name": "Jersson Fabián Buitrago",
@@ -47,6 +47,7 @@
         "jose6668/FarmaExpres_Backend:HU-ACFE-01-qa",
         "jose6668/FarmaExpres_Backend:HU-ACFE-02-dev",
         "jose6668/FarmaExpres_Backend:HU-ACFE-02-qa",
+        "jose6668/FarmaExpres_Backend:HU-ACFE-03-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-017-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-017-qa",
         "jose6668/FarmaExpres_Backend:HU-ADR-018-dev",
@@ -64,7 +65,7 @@
     },
     "Temenico": {
       "display_name": "Nicolás Tello",
-      "commits": 103,
+      "commits": 106,
       "repos": [
         "Temenico/FarmaExpres-Frontend",
         "Temenico/FarmaExpres-portal",
@@ -74,6 +75,7 @@
       "branches": [
         "Temenico/FarmaExpres-Frontend:Develop",
         "Temenico/FarmaExpres-Frontend:HU-BE01-dev",
+        "Temenico/FarmaExpres-Frontend:HU-BE01-qa",
         "Temenico/FarmaExpres-Frontend:HU-FE01-dev",
         "Temenico/FarmaExpres-Frontend:HU-FE01-qa",
         "Temenico/FarmaExpres-Frontend:HU-FE02-dev",
@@ -90,6 +92,7 @@
         "Temenico/FarmaExpres-Frontend:HU-FE07-qa",
         "Temenico/FarmaExpres-Frontend:HU-FE08-dev",
         "Temenico/FarmaExpres-Frontend:HU-FE08-qa",
+        "Temenico/FarmaExpres-Frontend:HU-FE09-dev",
         "Temenico/FarmaExpres-Frontend:HU-doc-dev",
         "Temenico/FarmaExpres-Frontend:HU-doc-qa",
         "Temenico/FarmaExpres-Frontend:HU-layout-dev",
@@ -99,6 +102,7 @@
         "Temenico/FarmaExpres-Frontend:main",
         "Temenico/FarmaExpres-portal:Develop",
         "Temenico/FarmaExpres-portal:HU-BE01-dev",
+        "Temenico/FarmaExpres-portal:HU-BE01-qa",
         "Temenico/FarmaExpres-portal:HU-FE01-dev",
         "Temenico/FarmaExpres-portal:HU-FE01-qa",
         "Temenico/FarmaExpres-portal:HU-FE02-dev",
@@ -115,6 +119,7 @@
         "Temenico/FarmaExpres-portal:HU-FE07-qa",
         "Temenico/FarmaExpres-portal:HU-FE08-dev",
         "Temenico/FarmaExpres-portal:HU-FE08-qa",
+        "Temenico/FarmaExpres-portal:HU-FE09-dev",
         "Temenico/FarmaExpres-portal:HU-doc-dev",
         "Temenico/FarmaExpres-portal:HU-doc-qa",
         "Temenico/FarmaExpres-portal:HU-layout-dev",
@@ -152,6 +157,7 @@
         "jose6668/FarmaExpres_Backend:HU-ACFE-01-qa",
         "jose6668/FarmaExpres_Backend:HU-ACFE-02-dev",
         "jose6668/FarmaExpres_Backend:HU-ACFE-02-qa",
+        "jose6668/FarmaExpres_Backend:HU-ACFE-03-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-017-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-017-qa",
         "jose6668/FarmaExpres_Backend:HU-ADR-018-dev",
@@ -194,8 +200,12 @@
       ],
       "branches": [
         "Marlon271/FarmaExpres-database:HU-01-dev",
+        "Temenico/FarmaExpres-Frontend:Develop",
         "Temenico/FarmaExpres-Frontend:HU-BE01-dev",
+        "Temenico/FarmaExpres-Frontend:HU-FE09-dev",
+        "Temenico/FarmaExpres-portal:Develop",
         "Temenico/FarmaExpres-portal:HU-BE01-dev",
+        "Temenico/FarmaExpres-portal:HU-FE09-dev",
         "jose6668/FarmaExpres-Diagramas:main",
         "jose6668/FarmaExpres-Doc:main",
         "jose6668/FarmaExpres-Weeks:Develop",
@@ -232,6 +242,7 @@
         "jose6668/FarmaExpres_Backend:HU-ACFE-01-qa",
         "jose6668/FarmaExpres_Backend:HU-ACFE-02-dev",
         "jose6668/FarmaExpres_Backend:HU-ACFE-02-qa",
+        "jose6668/FarmaExpres_Backend:HU-ACFE-03-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-01-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-01-qa",
         "jose6668/FarmaExpres_Backend:HU-ADR-017-dev",
@@ -350,6 +361,7 @@
         "jose6668/FarmaExpres_Backend:HU-ACFE-01-qa",
         "jose6668/FarmaExpres_Backend:HU-ACFE-02-dev",
         "jose6668/FarmaExpres_Backend:HU-ACFE-02-qa",
+        "jose6668/FarmaExpres_Backend:HU-ACFE-03-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-017-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-017-qa",
         "jose6668/FarmaExpres_Backend:HU-ADR-018-dev",
@@ -367,17 +379,18 @@
       "branches": 3,
       "commits": 57,
       "by_branch": {
-        "main": 454,
+        "main": 455,
         "origin": 97,
         "prueba-kpi": 31
       }
     },
     "Temenico/FarmaExpres-portal": {
-      "branches": 25,
-      "commits": 75,
+      "branches": 27,
+      "commits": 78,
       "by_branch": {
-        "Develop": 43,
+        "Develop": 54,
         "HU-BE01-dev": 53,
+        "HU-BE01-qa": 24,
         "HU-FE01-dev": 13,
         "HU-FE01-qa": 12,
         "HU-FE02-dev": 19,
@@ -394,17 +407,18 @@
         "HU-FE07-qa": 20,
         "HU-FE08-dev": 42,
         "HU-FE08-qa": 22,
+        "HU-FE09-dev": 54,
         "HU-doc-dev": 2,
         "HU-doc-qa": 2,
         "HU-layout-dev": 4,
         "HU-layout-qa": 4,
-        "QA": 23,
+        "QA": 25,
         "Realase.1": 1,
         "main": 1
       }
     },
     "jose6668/FarmaExpres_Backend": {
-      "branches": 60,
+      "branches": 61,
       "commits": 163,
       "by_branch": {
         "Develop": 102,
@@ -434,6 +448,7 @@
         "HU-ACFE-01-qa": 30,
         "HU-ACFE-02-dev": 64,
         "HU-ACFE-02-qa": 99,
+        "HU-ACFE-03-dev": 102,
         "HU-ADR-01-dev": 16,
         "HU-ADR-01-qa": 4,
         "HU-ADR-02-dev": 18,
@@ -515,11 +530,12 @@
       }
     },
     "Temenico/FarmaExpres-Frontend": {
-      "branches": 25,
+      "branches": 27,
       "commits": 0,
       "by_branch": {
-        "Develop": 43,
+        "Develop": 54,
         "HU-BE01-dev": 53,
+        "HU-BE01-qa": 24,
         "HU-FE01-dev": 13,
         "HU-FE01-qa": 12,
         "HU-FE02-dev": 19,
@@ -536,11 +552,12 @@
         "HU-FE07-qa": 20,
         "HU-FE08-dev": 42,
         "HU-FE08-qa": 22,
+        "HU-FE09-dev": 54,
         "HU-doc-dev": 2,
         "HU-doc-qa": 2,
         "HU-layout-dev": 4,
         "HU-layout-qa": 4,
-        "QA": 23,
+        "QA": 25,
         "Realase.1": 1,
         "main": 1
       }
