@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-06T21:38:10.341195+00:00",
-  "total_unique_commits": 505,
+  "generated_at": "2026-04-06T22:37:04.841377+00:00",
+  "total_unique_commits": 506,
   "participants": {
     "JerssonF": {
       "display_name": "Jersson Fabián Buitrago",
@@ -339,13 +339,14 @@
     },
     "Marlon271": {
       "display_name": "Marlon David Romero",
-      "commits": 28,
+      "commits": 29,
       "repos": [
         "Marlon271/FarmaExpres-api",
         "Marlon271/FarmaExpres-database",
         "jose6668/FarmaExpres",
         "jose6668/FarmaExpres-Diagramas",
         "jose6668/FarmaExpres-Doc",
+        "jose6668/FarmaExpres-Weeks",
         "jose6668/FarmaExpres_Backend"
       ],
       "branches": [
@@ -360,6 +361,7 @@
         "Marlon271/FarmaExpres-database:main",
         "jose6668/FarmaExpres-Diagramas:main",
         "jose6668/FarmaExpres-Doc:main",
+        "jose6668/FarmaExpres-Weeks:main",
         "jose6668/FarmaExpres:main",
         "jose6668/FarmaExpres:origin",
         "jose6668/FarmaExpres:prueba-kpi",
@@ -413,7 +415,7 @@
       "branches": 3,
       "commits": 57,
       "by_branch": {
-        "main": 501,
+        "main": 502,
         "origin": 97,
         "prueba-kpi": 31
       }
@@ -564,12 +566,12 @@
     },
     "jose6668/FarmaExpres-Weeks": {
       "branches": 4,
-      "commits": 24,
+      "commits": 25,
       "by_branch": {
         "Develop": 5,
         "QA": 5,
         "Realease.1": 5,
-        "main": 24
+        "main": 25
       }
     },
     "Temenico/FarmaExpres-Frontend": {
