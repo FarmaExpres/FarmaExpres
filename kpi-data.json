@@ -1,13 +1,15 @@
 {
-  "generated_at": "2026-04-07T20:07:02.497438+00:00",
-  "total_unique_commits": 518,
+  "generated_at": "2026-04-07T20:15:11.779203+00:00",
+  "total_unique_commits": 531,
   "participants": {
     "Marlon271": {
-      "display_name": "Marlon David Romero",
-      "commits": 41,
+      "display_name": "Marlon Romero",
+      "commits": 54,
       "repos": [
         "Marlon271/FarmaExpres-api",
         "Marlon271/FarmaExpres-database",
+        "Marlon271/Weeks-10",
+        "Marlon271/Weeks-9",
         "jose6668/FarmaExpres",
         "jose6668/FarmaExpres-Diagramas",
         "jose6668/FarmaExpres-Doc",
@@ -24,6 +26,8 @@
         "Marlon271/FarmaExpres-database:QA",
         "Marlon271/FarmaExpres-database:Realease.1",
         "Marlon271/FarmaExpres-database:main",
+        "Marlon271/Weeks-10:main",
+        "Marlon271/Weeks-9:main",
         "jose6668/FarmaExpres-Diagramas:main",
         "jose6668/FarmaExpres-Doc:main",
         "jose6668/FarmaExpres-Weeks:main",
@@ -413,9 +417,9 @@
   "repos": {
     "jose6668/FarmaExpres": {
       "branches": 3,
-      "commits": 59,
+      "commits": 61,
       "by_branch": {
-        "main": 520,
+        "main": 523,
         "origin": 97,
         "prueba-kpi": 31
       }
@@ -562,6 +566,20 @@
       "commits": 11,
       "by_branch": {
         "main": 11
+      }
+    },
+    "Marlon271/Weeks-9": {
+      "branches": 1,
+      "commits": 5,
+      "by_branch": {
+        "main": 5
+      }
+    },
+    "Marlon271/Weeks-10": {
+      "branches": 1,
+      "commits": 6,
+      "by_branch": {
+        "main": 6
       }
     },
     "jose6668/FarmaExpres-Weeks": {
