@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-13T23:42:43.139534+00:00",
-  "total_unique_commits": 547,
+  "generated_at": "2026-04-14T02:31:29.576322+00:00",
+  "total_unique_commits": 555,
   "participants": {
     "Marlon271": {
       "display_name": "Marlon Romero",
@@ -152,7 +152,7 @@
     },
     "Temenico": {
       "display_name": "Nicolás Tello",
-      "commits": 170,
+      "commits": 172,
       "repos": [
         "Temenico/FarmaExpres-Frontend",
         "Temenico/FarmaExpres-portal",
@@ -182,8 +182,12 @@
         "Temenico/FarmaExpres-Frontend:HU-FE09-dev",
         "Temenico/FarmaExpres-Frontend:HU-FE09-qa",
         "Temenico/FarmaExpres-Frontend:HU-FE10-dev",
+        "Temenico/FarmaExpres-Frontend:HU-FE10-qa",
         "Temenico/FarmaExpres-Frontend:HU-FE11-dev",
+        "Temenico/FarmaExpres-Frontend:HU-FE11-qa",
         "Temenico/FarmaExpres-Frontend:HU-FE12-dev",
+        "Temenico/FarmaExpres-Frontend:HU-FE12-qa",
+        "Temenico/FarmaExpres-Frontend:HU-FE13-dev",
         "Temenico/FarmaExpres-Frontend:HU-doc-dev",
         "Temenico/FarmaExpres-Frontend:HU-doc-qa",
         "Temenico/FarmaExpres-Frontend:HU-layout-dev",
@@ -213,8 +217,12 @@
         "Temenico/FarmaExpres-portal:HU-FE09-dev",
         "Temenico/FarmaExpres-portal:HU-FE09-qa",
         "Temenico/FarmaExpres-portal:HU-FE10-dev",
+        "Temenico/FarmaExpres-portal:HU-FE10-qa",
         "Temenico/FarmaExpres-portal:HU-FE11-dev",
+        "Temenico/FarmaExpres-portal:HU-FE11-qa",
         "Temenico/FarmaExpres-portal:HU-FE12-dev",
+        "Temenico/FarmaExpres-portal:HU-FE12-qa",
+        "Temenico/FarmaExpres-portal:HU-FE13-dev",
         "Temenico/FarmaExpres-portal:HU-doc-dev",
         "Temenico/FarmaExpres-portal:HU-doc-qa",
         "Temenico/FarmaExpres-portal:HU-layout-dev",
@@ -287,7 +295,7 @@
     },
     "jose6668": {
       "display_name": "José Leonardo Vargas",
-      "commits": 241,
+      "commits": 247,
       "repos": [
         "Marlon271/FarmaExpres-database",
         "Temenico/FarmaExpres-Frontend",
@@ -307,14 +315,24 @@
         "Temenico/FarmaExpres-Frontend:HU-BE01-dev",
         "Temenico/FarmaExpres-Frontend:HU-FE09-dev",
         "Temenico/FarmaExpres-Frontend:HU-FE10-dev",
+        "Temenico/FarmaExpres-Frontend:HU-FE10-qa",
         "Temenico/FarmaExpres-Frontend:HU-FE11-dev",
+        "Temenico/FarmaExpres-Frontend:HU-FE11-qa",
         "Temenico/FarmaExpres-Frontend:HU-FE12-dev",
+        "Temenico/FarmaExpres-Frontend:HU-FE12-qa",
+        "Temenico/FarmaExpres-Frontend:HU-FE13-dev",
+        "Temenico/FarmaExpres-Frontend:QA",
         "Temenico/FarmaExpres-portal:Develop",
         "Temenico/FarmaExpres-portal:HU-BE01-dev",
         "Temenico/FarmaExpres-portal:HU-FE09-dev",
         "Temenico/FarmaExpres-portal:HU-FE10-dev",
+        "Temenico/FarmaExpres-portal:HU-FE10-qa",
         "Temenico/FarmaExpres-portal:HU-FE11-dev",
+        "Temenico/FarmaExpres-portal:HU-FE11-qa",
         "Temenico/FarmaExpres-portal:HU-FE12-dev",
+        "Temenico/FarmaExpres-portal:HU-FE12-qa",
+        "Temenico/FarmaExpres-portal:HU-FE13-dev",
+        "Temenico/FarmaExpres-portal:QA",
         "jose6668/FarmaExpres-Diagramas:main",
         "jose6668/FarmaExpres-Doc:main",
         "jose6668/FarmaExpres-Weeks:Develop",
@@ -431,14 +449,14 @@
       "branches": 3,
       "commits": 61,
       "by_branch": {
-        "main": 632,
+        "main": 633,
         "origin": 97,
         "prueba-kpi": 31
       }
     },
     "Temenico/FarmaExpres-portal": {
-      "branches": 31,
-      "commits": 105,
+      "branches": 35,
+      "commits": 113,
       "by_branch": {
         "Develop": 79,
         "HU-BE01-dev": 53,
@@ -462,13 +480,17 @@
         "HU-FE09-dev": 66,
         "HU-FE09-qa": 26,
         "HU-FE10-dev": 70,
+        "HU-FE10-qa": 30,
         "HU-FE11-dev": 74,
+        "HU-FE11-qa": 30,
         "HU-FE12-dev": 77,
+        "HU-FE12-qa": 106,
+        "HU-FE13-dev": 79,
         "HU-doc-dev": 2,
         "HU-doc-qa": 2,
         "HU-layout-dev": 4,
         "HU-layout-qa": 4,
-        "QA": 27,
+        "QA": 107,
         "Realase.1": 1,
         "main": 1
       }
@@ -608,7 +630,7 @@
       }
     },
     "Temenico/FarmaExpres-Frontend": {
-      "branches": 31,
+      "branches": 35,
       "commits": 0,
       "by_branch": {
         "Develop": 79,
@@ -633,13 +655,17 @@
         "HU-FE09-dev": 66,
         "HU-FE09-qa": 26,
         "HU-FE10-dev": 70,
+        "HU-FE10-qa": 30,
         "HU-FE11-dev": 74,
+        "HU-FE11-qa": 30,
         "HU-FE12-dev": 77,
+        "HU-FE12-qa": 106,
+        "HU-FE13-dev": 79,
         "HU-doc-dev": 2,
         "HU-doc-qa": 2,
         "HU-layout-dev": 4,
         "HU-layout-qa": 4,
-        "QA": 27,
+        "QA": 107,
         "Realase.1": 1,
         "main": 1
       }
