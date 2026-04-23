@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-23T00:41:14.096544+00:00",
-  "total_unique_commits": 572,
+  "generated_at": "2026-04-23T02:35:47.973864+00:00",
+  "total_unique_commits": 573,
   "participants": {
     "Marlon271": {
       "display_name": "Marlon Romero",
@@ -302,7 +302,7 @@
     },
     "jose6668": {
       "display_name": "José Leonardo Vargas",
-      "commits": 254,
+      "commits": 255,
       "repos": [
         "Marlon271/FarmaExpres-database",
         "Temenico/FarmaExpres-Frontend",
@@ -433,6 +433,7 @@
         "jose6668/FarmaExpres_Micro_Gateway:main",
         "jose6668/FarmaExpres_Micro_Gateway:qa",
         "jose6668/FarmaExpres_Micro_Gateway:realease",
+        "jose6668/FarmaExpres_Micro_Gateway:realease.2",
         "jose6668/FarmaExpres_Micro_Inventory:HU-BE-11-dev",
         "jose6668/FarmaExpres_Micro_Inventory:HU-BE-11-qa",
         "jose6668/FarmaExpres_Micro_Inventory:HU-BE-12-dev",
@@ -465,7 +466,7 @@
       "branches": 3,
       "commits": 63,
       "by_branch": {
-        "main": 782,
+        "main": 783,
         "origin": 97,
         "prueba-kpi": 31
       }
@@ -694,8 +695,8 @@
       }
     },
     "jose6668/FarmaExpres_Micro_Gateway": {
-      "branches": 8,
-      "commits": 9,
+      "branches": 9,
+      "commits": 10,
       "by_branch": {
         "HU-AC01-dev": 4,
         "HU-AC01-qa": 4,
@@ -704,7 +705,8 @@
         "develop": 5,
         "main": 1,
         "qa": 5,
-        "realease": 1
+        "realease": 1,
+        "realease.2": 2
       }
     },
     "jose6668/FarmaExpres_Micro_Inventory": {
