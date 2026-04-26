@@ -371,7 +371,7 @@ El proyecto evoluciona bajo un enfoque incremental.
 **Fórmula:**  
 Participación (%) = (commits únicos del integrante / commits únicos totales del ecosistema) × 100
 
-**Última actualización:** 2026-04-26 00:03 UTC
+**Última actualización:** 2026-04-26 04:03 UTC
 
 **Cobertura del KPI:** todos los commits detectados en todas las ramas de todos los repositorios configurados, deduplicados por SHA.
 
@@ -379,10 +379,10 @@ Participación (%) = (commits únicos del integrante / commits únicos totales d
 
 | Integrante | Commits únicos | Participación | Repos | Ramas |
 |---|---:|---:|---:|---:|
-| José Leonardo Vargas | 255 | 44.50% | 11 | 143 |
-| Nicolás Tello | 179 | 31.24% | 4 | 138 |
-| Jersson Fabián Buitrago | 78 | 13.61% | 4 | 58 |
-| Marlon Romero | 61 | 10.65% | 9 | 63 |
+| José Leonardo Vargas | 255 | 44.50% | 11 | 144 |
+| Nicolás Tello | 179 | 31.24% | 4 | 139 |
+| Jersson Fabián Buitrago | 78 | 13.61% | 4 | 59 |
+| Marlon Romero | 61 | 10.65% | 9 | 64 |
 
 ### Gráfico de torta
 
