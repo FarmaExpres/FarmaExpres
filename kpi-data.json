@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-26T14:43:18.598840+00:00",
-  "total_unique_commits": 585,
+  "generated_at": "2026-04-26T15:41:50.591226+00:00",
+  "total_unique_commits": 589,
   "participants": {
     "Marlon271": {
       "display_name": "Marlon Romero",
@@ -158,7 +158,7 @@
     },
     "Temenico": {
       "display_name": "Nicolás Tello",
-      "commits": 191,
+      "commits": 195,
       "repos": [
         "Temenico/FarmaExpres-Frontend",
         "Temenico/FarmaExpres-portal",
@@ -196,6 +196,7 @@
         "Temenico/FarmaExpres-Frontend:HU-FE13-dev",
         "Temenico/FarmaExpres-Frontend:HU-FE13-qa",
         "Temenico/FarmaExpres-Frontend:HU-FE14-dev",
+        "Temenico/FarmaExpres-Frontend:HU-FE14-qa",
         "Temenico/FarmaExpres-Frontend:HU-doc-dev",
         "Temenico/FarmaExpres-Frontend:HU-doc-qa",
         "Temenico/FarmaExpres-Frontend:HU-layout-dev",
@@ -234,6 +235,7 @@
         "Temenico/FarmaExpres-portal:HU-FE13-dev",
         "Temenico/FarmaExpres-portal:HU-FE13-qa",
         "Temenico/FarmaExpres-portal:HU-FE14-dev",
+        "Temenico/FarmaExpres-portal:HU-FE14-qa",
         "Temenico/FarmaExpres-portal:HU-doc-dev",
         "Temenico/FarmaExpres-portal:HU-doc-qa",
         "Temenico/FarmaExpres-portal:HU-layout-dev",
@@ -338,6 +340,7 @@
         "Temenico/FarmaExpres-Frontend:HU-FE13-dev",
         "Temenico/FarmaExpres-Frontend:HU-FE13-qa",
         "Temenico/FarmaExpres-Frontend:HU-FE14-dev",
+        "Temenico/FarmaExpres-Frontend:HU-FE14-qa",
         "Temenico/FarmaExpres-Frontend:QA",
         "Temenico/FarmaExpres-Frontend:Release.2",
         "Temenico/FarmaExpres-portal:Develop",
@@ -352,6 +355,7 @@
         "Temenico/FarmaExpres-portal:HU-FE13-dev",
         "Temenico/FarmaExpres-portal:HU-FE13-qa",
         "Temenico/FarmaExpres-portal:HU-FE14-dev",
+        "Temenico/FarmaExpres-portal:HU-FE14-qa",
         "Temenico/FarmaExpres-portal:QA",
         "Temenico/FarmaExpres-portal:Release.2",
         "jose6668/FarmaExpres-Diagramas:main",
@@ -478,14 +482,14 @@
       "branches": 3,
       "commits": 63,
       "by_branch": {
-        "main": 839,
+        "main": 840,
         "origin": 97,
         "prueba-kpi": 31
       }
     },
     "Temenico/FarmaExpres-portal": {
-      "branches": 38,
-      "commits": 124,
+      "branches": 39,
+      "commits": 128,
       "by_branch": {
         "Develop": 86,
         "HU-BE01-dev": 53,
@@ -517,11 +521,12 @@
         "HU-FE13-dev": 81,
         "HU-FE13-qa": 109,
         "HU-FE14-dev": 85,
+        "HU-FE14-qa": 113,
         "HU-doc-dev": 2,
         "HU-doc-qa": 2,
         "HU-layout-dev": 4,
         "HU-layout-qa": 4,
-        "QA": 110,
+        "QA": 114,
         "Release.1": 1,
         "Release.2": 111,
         "main": 1
@@ -667,7 +672,7 @@
       }
     },
     "Temenico/FarmaExpres-Frontend": {
-      "branches": 38,
+      "branches": 39,
       "commits": 0,
       "by_branch": {
         "Develop": 86,
@@ -700,11 +705,12 @@
         "HU-FE13-dev": 81,
         "HU-FE13-qa": 109,
         "HU-FE14-dev": 85,
+        "HU-FE14-qa": 113,
         "HU-doc-dev": 2,
         "HU-doc-qa": 2,
         "HU-layout-dev": 4,
         "HU-layout-qa": 4,
-        "QA": 110,
+        "QA": 114,
         "Release.1": 1,
         "Release.2": 111,
         "main": 1
