@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-01T22:13:12.515167+00:00",
-  "total_unique_commits": 589,
+  "generated_at": "2026-05-01T23:27:16.839213+00:00",
+  "total_unique_commits": 592,
   "participants": {
     "Marlon271": {
       "display_name": "Marlon Romero",
@@ -81,6 +81,7 @@
         "jose6668/FarmaExpres_Backend:HU-ADR-019-qa",
         "jose6668/FarmaExpres_Backend:HU-ADR-020-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-020-qa",
+        "jose6668/FarmaExpres_Backend:HU-JVL-001",
         "jose6668/FarmaExpres_Backend:QA"
       ]
     },
@@ -153,6 +154,7 @@
         "jose6668/FarmaExpres_Backend:HU-ADR-12-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-12-qa",
         "jose6668/FarmaExpres_Backend:HU-ADR-15-dev",
+        "jose6668/FarmaExpres_Backend:HU-JVL-001",
         "jose6668/FarmaExpres_Backend:QA"
       ]
     },
@@ -306,13 +308,14 @@
         "jose6668/FarmaExpres_Backend:HU-ADR-12-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-12-qa",
         "jose6668/FarmaExpres_Backend:HU-ADR-15-dev",
+        "jose6668/FarmaExpres_Backend:HU-JVL-001",
         "jose6668/FarmaExpres_Backend:HU-doc-dev",
         "jose6668/FarmaExpres_Backend:QA"
       ]
     },
     "jose6668": {
       "display_name": "José Leonardo Vargas",
-      "commits": 255,
+      "commits": 258,
       "repos": [
         "Marlon271/FarmaExpres-database",
         "Temenico/FarmaExpres-Frontend",
@@ -432,6 +435,7 @@
         "jose6668/FarmaExpres_Backend:HU-ADR-12-dev",
         "jose6668/FarmaExpres_Backend:HU-ADR-12-qa",
         "jose6668/FarmaExpres_Backend:HU-ADR-15-dev",
+        "jose6668/FarmaExpres_Backend:HU-JVL-001",
         "jose6668/FarmaExpres_Backend:HU-dev",
         "jose6668/FarmaExpres_Backend:HU-dev-Realaese.1",
         "jose6668/FarmaExpres_Backend:HU-dev-Release.2",
@@ -482,7 +486,7 @@
       "branches": 3,
       "commits": 63,
       "by_branch": {
-        "main": 910,
+        "main": 911,
         "origin": 97,
         "prueba-kpi": 31
       }
@@ -533,8 +537,8 @@
       }
     },
     "jose6668/FarmaExpres_Backend": {
-      "branches": 74,
-      "commits": 244,
+      "branches": 75,
+      "commits": 247,
       "by_branch": {
         "Develop": 145,
         "HU-007-dev": 75,
@@ -601,6 +605,7 @@
         "HU-ADR-019-qa": 23,
         "HU-ADR-020-dev": 38,
         "HU-ADR-020-qa": 24,
+        "HU-JVL-001": 148,
         "HU-dev": 14,
         "HU-dev-Realaese.1": 2,
         "HU-dev-Release.2": 2,
