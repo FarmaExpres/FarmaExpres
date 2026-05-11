@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T23:27:30.745902+00:00",
+  "generated_at": "2026-05-11T01:24:34.141359+00:00",
   "total_unique_commits": 659,
   "participants": {
     "Marlon271": {
@@ -622,7 +622,7 @@
       "branches": 3,
       "commits": 63,
       "by_branch": {
-        "main": 1038,
+        "main": 1039,
         "origin": 97,
         "prueba-kpi": 31
       }
@@ -689,7 +689,7 @@
       "commits": 283,
       "by_branch": {
         "Develop": 167,
-        "HU-05-NTM-dev": 149,
+        "HU-05-NTM-dev": 167,
         "HU-007-dev": 75,
         "HU-007-qa": 103,
         "HU-008-dev": 79,
