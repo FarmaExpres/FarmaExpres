@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T01:24:34.141359+00:00",
+  "generated_at": "2026-05-11T05:33:47.059165+00:00",
   "total_unique_commits": 659,
   "participants": {
     "Marlon271": {
@@ -31,6 +31,7 @@
         "Marlon271/Weeks-10:main",
         "Marlon271/Weeks-9:main",
         "Temenico/FarmaExpres-Frontend:Develop",
+        "Temenico/FarmaExpres-Frontend:HU-16-NTM-dev",
         "Temenico/FarmaExpres-Frontend:HU-JFBM-002-dev",
         "Temenico/FarmaExpres-Frontend:HU-JFBM-002-qa",
         "Temenico/FarmaExpres-Frontend:HU-JLV-002-dev",
@@ -39,6 +40,7 @@
         "Temenico/FarmaExpres-Frontend:HU-MDRT-001-qa",
         "Temenico/FarmaExpres-Frontend:QA",
         "Temenico/FarmaExpres-portal:Develop",
+        "Temenico/FarmaExpres-portal:HU-16-NTM-dev",
         "Temenico/FarmaExpres-portal:HU-JFBM-002-dev",
         "Temenico/FarmaExpres-portal:HU-JFBM-002-qa",
         "Temenico/FarmaExpres-portal:HU-JLV-002-dev",
@@ -128,6 +130,7 @@
       ],
       "branches": [
         "Temenico/FarmaExpres-Frontend:Develop",
+        "Temenico/FarmaExpres-Frontend:HU-16-NTM-dev",
         "Temenico/FarmaExpres-Frontend:HU-JFBM-001-dev",
         "Temenico/FarmaExpres-Frontend:HU-JFBM-001-qa",
         "Temenico/FarmaExpres-Frontend:HU-JFBM-002-dev",
@@ -138,6 +141,7 @@
         "Temenico/FarmaExpres-Frontend:HU-MDRT-001-qa",
         "Temenico/FarmaExpres-Frontend:QA",
         "Temenico/FarmaExpres-portal:Develop",
+        "Temenico/FarmaExpres-portal:HU-16-NTM-dev",
         "Temenico/FarmaExpres-portal:HU-JFBM-001-dev",
         "Temenico/FarmaExpres-portal:HU-JFBM-001-qa",
         "Temenico/FarmaExpres-portal:HU-JFBM-002-dev",
@@ -237,6 +241,7 @@
         "Temenico/FarmaExpres-Frontend:HU-14-NTM-qa",
         "Temenico/FarmaExpres-Frontend:HU-15-NTM-dev",
         "Temenico/FarmaExpres-Frontend:HU-15-NTM-qa",
+        "Temenico/FarmaExpres-Frontend:HU-16-NTM-dev",
         "Temenico/FarmaExpres-Frontend:HU-BE01-dev",
         "Temenico/FarmaExpres-Frontend:HU-BE01-qa",
         "Temenico/FarmaExpres-Frontend:HU-FE01-dev",
@@ -288,6 +293,7 @@
         "Temenico/FarmaExpres-portal:HU-14-NTM-qa",
         "Temenico/FarmaExpres-portal:HU-15-NTM-dev",
         "Temenico/FarmaExpres-portal:HU-15-NTM-qa",
+        "Temenico/FarmaExpres-portal:HU-16-NTM-dev",
         "Temenico/FarmaExpres-portal:HU-BE01-dev",
         "Temenico/FarmaExpres-portal:HU-BE01-qa",
         "Temenico/FarmaExpres-portal:HU-FE01-dev",
@@ -436,6 +442,7 @@
         "Temenico/FarmaExpres-Frontend:HU-14-NTM-qa",
         "Temenico/FarmaExpres-Frontend:HU-15-NTM-dev",
         "Temenico/FarmaExpres-Frontend:HU-15-NTM-qa",
+        "Temenico/FarmaExpres-Frontend:HU-16-NTM-dev",
         "Temenico/FarmaExpres-Frontend:HU-BE01-dev",
         "Temenico/FarmaExpres-Frontend:HU-FE09-dev",
         "Temenico/FarmaExpres-Frontend:HU-FE10-dev",
@@ -463,6 +470,7 @@
         "Temenico/FarmaExpres-portal:HU-14-NTM-qa",
         "Temenico/FarmaExpres-portal:HU-15-NTM-dev",
         "Temenico/FarmaExpres-portal:HU-15-NTM-qa",
+        "Temenico/FarmaExpres-portal:HU-16-NTM-dev",
         "Temenico/FarmaExpres-portal:HU-BE01-dev",
         "Temenico/FarmaExpres-portal:HU-FE09-dev",
         "Temenico/FarmaExpres-portal:HU-FE10-dev",
@@ -622,13 +630,13 @@
       "branches": 3,
       "commits": 63,
       "by_branch": {
-        "main": 1039,
+        "main": 1040,
         "origin": 97,
         "prueba-kpi": 31
       }
     },
     "Temenico/FarmaExpres-portal": {
-      "branches": 51,
+      "branches": 52,
       "commits": 159,
       "by_branch": {
         "Develop": 103,
@@ -636,6 +644,7 @@
         "HU-14-NTM-qa": 113,
         "HU-15-NTM-dev": 90,
         "HU-15-NTM-qa": 117,
+        "HU-16-NTM-dev": 103,
         "HU-BE01-dev": 53,
         "HU-BE01-qa": 24,
         "HU-FE01-dev": 13,
@@ -837,7 +846,7 @@
       }
     },
     "Temenico/FarmaExpres-Frontend": {
-      "branches": 51,
+      "branches": 52,
       "commits": 0,
       "by_branch": {
         "Develop": 103,
@@ -845,6 +854,7 @@
         "HU-14-NTM-qa": 113,
         "HU-15-NTM-dev": 90,
         "HU-15-NTM-qa": 117,
+        "HU-16-NTM-dev": 103,
         "HU-BE01-dev": 53,
         "HU-BE01-qa": 24,
         "HU-FE01-dev": 13,
