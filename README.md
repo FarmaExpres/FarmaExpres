@@ -266,6 +266,7 @@ Gestión y exposición de los endpoints que conectan el frontend con los microse
 Estructura y configuración de las bases de datos utilizadas en el sistema.
 
 🔗 [FarmaExpres Database](https://github.com/Marlon271/FarmaExpres-database)
+🔗 [FarmaExpres Database_NoSQL](https://github.com/Marlon271/FarmaExpres-Micro-NoSQL#)
 
 ---
 
