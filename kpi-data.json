@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-12T20:31:19.786997+00:00",
-  "total_unique_commits": 662,
+  "generated_at": "2026-05-12T21:52:22.881147+00:00",
+  "total_unique_commits": 670,
   "participants": {
     "Marlon271": {
       "display_name": "Marlon Romero",
-      "commits": 92,
+      "commits": 100,
       "repos": [
         "Marlon271/FarmaExpres-Micro-NoSQL",
         "Marlon271/FarmaExpres-api",
@@ -20,6 +20,7 @@
         "jose6668/FarmaExpres_Backend"
       ],
       "branches": [
+        "Marlon271/FarmaExpres-Micro-NoSQL:Develop",
         "Marlon271/FarmaExpres-Micro-NoSQL:main",
         "Marlon271/FarmaExpres-api:Develop",
         "Marlon271/FarmaExpres-api:QA",
@@ -632,7 +633,7 @@
       "branches": 3,
       "commits": 65,
       "by_branch": {
-        "main": 1059,
+        "main": 1060,
         "origin": 97,
         "prueba-kpi": 31
       }
@@ -957,9 +958,10 @@
       }
     },
     "Marlon271/FarmaExpres-Micro-NoSQL": {
-      "branches": 1,
-      "commits": 1,
+      "branches": 2,
+      "commits": 9,
       "by_branch": {
+        "Develop": 9,
         "main": 1
       }
     }
