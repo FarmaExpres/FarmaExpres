@@ -1,0 +1,73 @@
+name: Audit Workflow Changes
+
+on:
+  pull_request:
+    branches:
+      - "main"
+    paths:
+      - ".github/workflows/**"
+  push:
+    branches:
+      - "main"
+    paths:
+      - ".github/workflows/**"
+
+permissions:
+  contents: read
+
+jobs:
+  audit-workflows:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Scan workflow changes for dangerous commands
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ "${GITHUB_EVENT_NAME}" == "pull_request" ]]; then
+            RANGE="origin/${GITHUB_BASE_REF}...${GITHUB_SHA}"
+          else
+            RANGE="${GITHUB_EVENT_BEFORE}...${GITHUB_SHA}"
+          fi
+
+          mapfile -t files < <(git diff --name-only "$RANGE" -- ".github/workflows/")
+
+          if [[ ${#files[@]} -eq 0 ]]; then
+            echo "No workflow files changed."
+            exit 0
+          fi
+
+          echo "Scanning workflow files:"
+          printf '%s\n' "${files[@]}"
+
+          # Patterns for potentially destructive repo operations.
+          patterns=(
+            "gh[[:space:]]+repo[[:space:]]+delete"
+            "gh[[:space:]]+api[[:space:]]+-X[[:space:]]+DELETE"
+            "curl[[:space:]].*api\.github\.com/repos/.*/? -X[[:space:]]+DELETE"
+            "curl[[:space:]].*-X[[:space:]]+DELETE[[:space:]].*api\.github\.com/repos/.*/?"
+            "git[[:space:]]+push[[:space:]]+--delete"
+          )
+
+          found=0
+          for file in "${files[@]}"; do
+            for pattern in "${patterns[@]}"; do
+              if grep -nE "$pattern" "$file" >/dev/null; then
+                echo "Dangerous pattern found in $file (pattern: $pattern)"
+                grep -nE "$pattern" "$file" || true
+                found=1
+              fi
+            done
+          done
+
+          if [[ $found -ne 0 ]]; then
+            echo "Workflow audit failed: dangerous commands detected."
+            exit 1
+          fi
+
+          echo "Workflow audit passed."
