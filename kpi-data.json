@@ -1,19 +1,35 @@
 {
-  "generated_at": "2026-05-19T13:03:36.246917+00:00",
-  "total_unique_commits": 711,
+  "generated_at": "2026-05-19T14:09:41.031652+00:00",
+  "total_unique_commits": 721,
   "participants": {
     "JerssonF": {
       "display_name": "Jersson Fabián Buitrago",
-      "commits": 98,
+      "commits": 108,
       "repos": [
+        "FarmaExpres/FarmaExpres-Frontend",
         "Temenico/FarmaExpres-Frontend",
         "Temenico/FarmaExpres-portal",
         "jose6668/FarmaExpres",
+        "jose6668/FarmaExpres-Diagramas",
         "jose6668/FarmaExpres-Doc",
         "jose6668/FarmaExpres-Weeks",
-        "jose6668/FarmaExpres_Backend"
+        "jose6668/FarmaExpres_Backend",
+        "jose6668/FarmaExpres_Micro_Gateway"
       ],
       "branches": [
+        "FarmaExpres/FarmaExpres-Frontend:Develop",
+        "FarmaExpres/FarmaExpres-Frontend:HU-16-NTM-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-16-NTM-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JFBM-001-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JFBM-001-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JFBM-002-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JFBM-002-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JLV-002-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JLV-002-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-MDRT-001",
+        "FarmaExpres/FarmaExpres-Frontend:HU-MDRT-001-qa",
+        "FarmaExpres/FarmaExpres-Frontend:QA",
+        "FarmaExpres/FarmaExpres-Frontend:main",
         "Temenico/FarmaExpres-Frontend:Develop",
         "Temenico/FarmaExpres-Frontend:HU-16-NTM-dev",
         "Temenico/FarmaExpres-Frontend:HU-16-NTM-qa",
@@ -26,6 +42,7 @@
         "Temenico/FarmaExpres-Frontend:HU-MDRT-001",
         "Temenico/FarmaExpres-Frontend:HU-MDRT-001-qa",
         "Temenico/FarmaExpres-Frontend:QA",
+        "Temenico/FarmaExpres-Frontend:main",
         "Temenico/FarmaExpres-portal:Develop",
         "Temenico/FarmaExpres-portal:HU-16-NTM-dev",
         "Temenico/FarmaExpres-portal:HU-16-NTM-qa",
@@ -38,6 +55,8 @@
         "Temenico/FarmaExpres-portal:HU-MDRT-001",
         "Temenico/FarmaExpres-portal:HU-MDRT-001-qa",
         "Temenico/FarmaExpres-portal:QA",
+        "Temenico/FarmaExpres-portal:main",
+        "jose6668/FarmaExpres-Diagramas:main",
         "jose6668/FarmaExpres-Doc:main",
         "jose6668/FarmaExpres-Weeks:Develop",
         "jose6668/FarmaExpres-Weeks:QA",
@@ -111,13 +130,16 @@
         "jose6668/FarmaExpres_Backend:HU-JLV-003-qa",
         "jose6668/FarmaExpres_Backend:HU-MDRT-001",
         "jose6668/FarmaExpres_Backend:HU-MDRT-001-qa",
-        "jose6668/FarmaExpres_Backend:QA"
+        "jose6668/FarmaExpres_Backend:QA",
+        "jose6668/FarmaExpres_Backend:main",
+        "jose6668/FarmaExpres_Micro_Gateway:main"
       ]
     },
     "Marlon271": {
       "display_name": "Marlon Romero",
       "commits": 108,
       "repos": [
+        "FarmaExpres/FarmaExpres-Frontend",
         "Marlon271/FarmaExpres-Micro-NoSQL",
         "Marlon271/FarmaExpres-api",
         "Marlon271/FarmaExpres-database",
@@ -132,6 +154,16 @@
         "jose6668/FarmaExpres_Backend"
       ],
       "branches": [
+        "FarmaExpres/FarmaExpres-Frontend:Develop",
+        "FarmaExpres/FarmaExpres-Frontend:HU-16-NTM-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-16-NTM-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JFBM-002-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JFBM-002-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JLV-002-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JLV-002-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-MDRT-001",
+        "FarmaExpres/FarmaExpres-Frontend:HU-MDRT-001-qa",
+        "FarmaExpres/FarmaExpres-Frontend:QA",
         "Marlon271/FarmaExpres-Micro-NoSQL:Develop",
         "Marlon271/FarmaExpres-Micro-NoSQL:main",
         "Marlon271/FarmaExpres-api:Develop",
@@ -239,12 +271,66 @@
       "display_name": "Nicolás Tello",
       "commits": 224,
       "repos": [
+        "FarmaExpres/FarmaExpres-Frontend",
         "Temenico/FarmaExpres-Frontend",
         "Temenico/FarmaExpres-portal",
         "jose6668/FarmaExpres",
         "jose6668/FarmaExpres_Backend"
       ],
       "branches": [
+        "FarmaExpres/FarmaExpres-Frontend:Develop",
+        "FarmaExpres/FarmaExpres-Frontend:HU-14-NTM-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-14-NTM-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-15-NTM-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-15-NTM-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-16-NTM-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-16-NTM-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-BE01-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-BE01-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE01-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE01-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE02-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE02-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE03-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE03-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE04-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE04-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE05-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE05-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE06-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE06-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE07-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE07-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE08-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE08-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE09-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE09-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE10-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE10-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE11-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE11-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE12-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE12-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE13-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE13-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JFBM-001-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JFBM-001-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JFBM-002-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JFBM-002-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JLV-001",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JLV-001-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JLV-002-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JLV-002-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-MDRT-001",
+        "FarmaExpres/FarmaExpres-Frontend:HU-MDRT-001-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-doc-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-doc-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-layout-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-layout-qa",
+        "FarmaExpres/FarmaExpres-Frontend:QA",
+        "FarmaExpres/FarmaExpres-Frontend:Release.1",
+        "FarmaExpres/FarmaExpres-Frontend:Release.2",
+        "FarmaExpres/FarmaExpres-Frontend:main",
         "Temenico/FarmaExpres-Frontend:Develop",
         "Temenico/FarmaExpres-Frontend:HU-14-NTM-dev",
         "Temenico/FarmaExpres-Frontend:HU-14-NTM-qa",
@@ -435,6 +521,7 @@
       "display_name": "José Leonardo Vargas",
       "commits": 281,
       "repos": [
+        "FarmaExpres/FarmaExpres-Frontend",
         "Marlon271/FarmaExpres-database",
         "Temenico/FarmaExpres-Frontend",
         "Temenico/FarmaExpres-portal",
@@ -448,6 +535,35 @@
         "jose6668/FarmaExpres_Micro_Login"
       ],
       "branches": [
+        "FarmaExpres/FarmaExpres-Frontend:Develop",
+        "FarmaExpres/FarmaExpres-Frontend:HU-14-NTM-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-14-NTM-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-15-NTM-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-15-NTM-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-16-NTM-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-16-NTM-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-BE01-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE09-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE10-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE10-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE11-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE11-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE12-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE12-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE13-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-FE13-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JFBM-001-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JFBM-001-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JFBM-002-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JFBM-002-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JLV-001",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JLV-001-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JLV-002-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JLV-002-qa",
+        "FarmaExpres/FarmaExpres-Frontend:HU-MDRT-001",
+        "FarmaExpres/FarmaExpres-Frontend:HU-MDRT-001-qa",
+        "FarmaExpres/FarmaExpres-Frontend:QA",
+        "FarmaExpres/FarmaExpres-Frontend:Release.2",
         "Marlon271/FarmaExpres-database:HU-01-dev",
         "Temenico/FarmaExpres-Frontend:Develop",
         "Temenico/FarmaExpres-Frontend:HU-14-NTM-dev",
@@ -643,16 +759,16 @@
   "repos": {
     "jose6668/FarmaExpres": {
       "branches": 3,
-      "commits": 68,
+      "commits": 69,
       "by_branch": {
-        "main": 1141,
+        "main": 1143,
         "origin": 97,
         "prueba-kpi": 31
       }
     },
     "Temenico/FarmaExpres-portal": {
       "branches": 53,
-      "commits": 172,
+      "commits": 173,
       "by_branch": {
         "Develop": 107,
         "HU-14-NTM-dev": 85,
@@ -706,12 +822,71 @@
         "QA": 136,
         "Release.1": 1,
         "Release.2": 111,
-        "main": 1
+        "main": 2
+      }
+    },
+    "FarmaExpres/FarmaExpres-Frontend": {
+      "branches": 53,
+      "commits": 0,
+      "by_branch": {
+        "Develop": 107,
+        "HU-14-NTM-dev": 85,
+        "HU-14-NTM-qa": 113,
+        "HU-15-NTM-dev": 90,
+        "HU-15-NTM-qa": 117,
+        "HU-16-NTM-dev": 106,
+        "HU-16-NTM-qa": 135,
+        "HU-BE01-dev": 53,
+        "HU-BE01-qa": 24,
+        "HU-FE01-dev": 13,
+        "HU-FE01-qa": 12,
+        "HU-FE02-dev": 19,
+        "HU-FE02-qa": 18,
+        "HU-FE03-dev": 17,
+        "HU-FE03-qa": 16,
+        "HU-FE04-dev": 7,
+        "HU-FE04-qa": 6,
+        "HU-FE05-dev": 9,
+        "HU-FE05-qa": 8,
+        "HU-FE06-dev": 11,
+        "HU-FE06-qa": 10,
+        "HU-FE07-dev": 22,
+        "HU-FE07-qa": 20,
+        "HU-FE08-dev": 42,
+        "HU-FE08-qa": 22,
+        "HU-FE09-dev": 66,
+        "HU-FE09-qa": 26,
+        "HU-FE10-dev": 70,
+        "HU-FE10-qa": 30,
+        "HU-FE11-dev": 74,
+        "HU-FE11-qa": 30,
+        "HU-FE12-dev": 77,
+        "HU-FE12-qa": 106,
+        "HU-FE13-dev": 81,
+        "HU-FE13-qa": 109,
+        "HU-JFBM-001-dev": 92,
+        "HU-JFBM-001-qa": 119,
+        "HU-JFBM-002-dev": 100,
+        "HU-JFBM-002-qa": 100,
+        "HU-JLV-001-qa": 115,
+        "HU-JLV-001": 88,
+        "HU-JLV-002-dev": 102,
+        "HU-JLV-002-qa": 126,
+        "HU-MDRT-001-qa": 124,
+        "HU-MDRT-001": 97,
+        "HU-doc-dev": 2,
+        "HU-doc-qa": 2,
+        "HU-layout-dev": 4,
+        "HU-layout-qa": 4,
+        "QA": 136,
+        "Release.1": 1,
+        "Release.2": 111,
+        "main": 2
       }
     },
     "jose6668/FarmaExpres_Backend": {
       "branches": 88,
-      "commits": 299,
+      "commits": 303,
       "by_branch": {
         "Develop": 174,
         "HU-05-NTM-dev": 173,
@@ -800,7 +975,58 @@
         "QA": 180,
         "Release.1": 3,
         "Release.2": 3,
-        "main": 1
+        "main": 5
+      }
+    },
+    "jose6668/FarmaExpres_Micro_Gateway": {
+      "branches": 9,
+      "commits": 11,
+      "by_branch": {
+        "HU-AC01-dev": 4,
+        "HU-AC01-qa": 4,
+        "HU-doc-dev": 2,
+        "HU-doc-qa": 2,
+        "develop": 5,
+        "main": 2,
+        "qa": 5,
+        "realease": 1,
+        "realease.2": 2
+      }
+    },
+    "jose6668/FarmaExpres_Micro_Inventory": {
+      "branches": 13,
+      "commits": 23,
+      "by_branch": {
+        "HU-BE-11-dev": 8,
+        "HU-BE-11-qa": 6,
+        "HU-BE-12-dev": 10,
+        "HU-BE-12-qa": 8,
+        "HU-MCI-dev": 6,
+        "HU-MCI-qa": 4,
+        "HU-doc-dev": 3,
+        "HU-doc-qa": 2,
+        "develop": 15,
+        "main": 1,
+        "qa": 9,
+        "realease": 1,
+        "realease.2": 15
+      }
+    },
+    "jose6668/FarmaExpres_Micro_Login": {
+      "branches": 11,
+      "commits": 25,
+      "by_branch": {
+        "HU-BE-11-dev": 7,
+        "HU-BE-11-qa": 12,
+        "HU-MCI-dev": 4,
+        "HU-MCI-qa": 8,
+        "HU-doc-dev": 2,
+        "HU-doc-qa": 2,
+        "develop": 12,
+        "main": 1,
+        "qa": 14,
+        "realease": 1,
+        "realease.2": 12
       }
     },
     "Marlon271/FarmaExpres-api": {
@@ -824,18 +1050,26 @@
         "main": 1
       }
     },
+    "Marlon271/FarmaExpres-Micro-NoSQL": {
+      "branches": 2,
+      "commits": 17,
+      "by_branch": {
+        "Develop": 17,
+        "main": 1
+      }
+    },
     "jose6668/FarmaExpres-Doc": {
       "branches": 1,
-      "commits": 29,
+      "commits": 30,
       "by_branch": {
-        "main": 29
+        "main": 30
       }
     },
     "jose6668/FarmaExpres-Diagramas": {
       "branches": 1,
-      "commits": 12,
+      "commits": 13,
       "by_branch": {
-        "main": 12
+        "main": 13
       }
     },
     "Marlon271/Weeks-9": {
@@ -854,12 +1088,12 @@
     },
     "jose6668/FarmaExpres-Weeks": {
       "branches": 4,
-      "commits": 38,
+      "commits": 39,
       "by_branch": {
         "Develop": 5,
         "QA": 5,
         "Realease.1": 5,
-        "main": 38
+        "main": 39
       }
     },
     "Temenico/FarmaExpres-Frontend": {
@@ -918,66 +1152,7 @@
         "QA": 136,
         "Release.1": 1,
         "Release.2": 111,
-        "main": 1
-      }
-    },
-    "jose6668/FarmaExpres_Micro_Gateway": {
-      "branches": 9,
-      "commits": 10,
-      "by_branch": {
-        "HU-AC01-dev": 4,
-        "HU-AC01-qa": 4,
-        "HU-doc-dev": 2,
-        "HU-doc-qa": 2,
-        "develop": 5,
-        "main": 1,
-        "qa": 5,
-        "realease": 1,
-        "realease.2": 2
-      }
-    },
-    "jose6668/FarmaExpres_Micro_Inventory": {
-      "branches": 13,
-      "commits": 23,
-      "by_branch": {
-        "HU-BE-11-dev": 8,
-        "HU-BE-11-qa": 6,
-        "HU-BE-12-dev": 10,
-        "HU-BE-12-qa": 8,
-        "HU-MCI-dev": 6,
-        "HU-MCI-qa": 4,
-        "HU-doc-dev": 3,
-        "HU-doc-qa": 2,
-        "develop": 15,
-        "main": 1,
-        "qa": 9,
-        "realease": 1,
-        "realease.2": 15
-      }
-    },
-    "jose6668/FarmaExpres_Micro_Login": {
-      "branches": 11,
-      "commits": 25,
-      "by_branch": {
-        "HU-BE-11-dev": 7,
-        "HU-BE-11-qa": 12,
-        "HU-MCI-dev": 4,
-        "HU-MCI-qa": 8,
-        "HU-doc-dev": 2,
-        "HU-doc-qa": 2,
-        "develop": 12,
-        "main": 1,
-        "qa": 14,
-        "realease": 1,
-        "realease.2": 12
-      }
-    },
-    "Marlon271/FarmaExpres-Micro-NoSQL": {
-      "branches": 2,
-      "commits": 17,
-      "by_branch": {
-        "Develop": 17,
-        "main": 1
+        "main": 2
       }
     }
   }
