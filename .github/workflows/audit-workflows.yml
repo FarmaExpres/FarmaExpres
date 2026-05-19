@@ -32,7 +32,11 @@ jobs:
           if [[ "${GITHUB_EVENT_NAME}" == "pull_request" ]]; then
             RANGE="origin/${GITHUB_BASE_REF}...${GITHUB_SHA}"
           else
-            RANGE="${GITHUB_EVENT_BEFORE}...${GITHUB_SHA}"
+            BEFORE_SHA="${GITHUB_EVENT_BEFORE:-}"
+            if [[ -z "$BEFORE_SHA" || "$BEFORE_SHA" == "0000000000000000000000000000000000000000" ]]; then
+              BEFORE_SHA="${GITHUB_SHA}~1"
+            fi
+            RANGE="${BEFORE_SHA}...${GITHUB_SHA}"
           fi
 
           mapfile -t files < <(git diff --name-only "$RANGE" -- ".github/workflows/")
