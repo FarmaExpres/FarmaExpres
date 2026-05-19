@@ -5,7 +5,7 @@ on:
   repository_dispatch:
     types: [kpi-update]
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "*/10 * * * *"
 
 permissions:
   contents: write
