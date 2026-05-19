@@ -373,7 +373,7 @@ El proyecto evoluciona bajo un enfoque incremental.
 **Fórmula:**  
 Participación (%) = (commits únicos del integrante / commits únicos totales del ecosistema) × 100
 
-**Última actualización:** 2026-05-19 21:08 UTC
+**Última actualización:** 2026-05-19 22:40 UTC
 
 **Cobertura del KPI:** todos los commits detectados en todas las ramas de todos los repositorios configurados, deduplicados por SHA.
 
@@ -381,10 +381,10 @@ Participación (%) = (commits únicos del integrante / commits únicos totales d
 
 | Integrante | Commits únicos | Participación | Repos | Ramas |
 |---|---:|---:|---:|---:|
-| José Leonardo Vargas | 281 | 38.60% | 12 | 218 |
-| Nicolás Tello | 224 | 30.77% | 5 | 237 |
-| Jersson Fabián Buitrago | 115 | 15.80% | 11 | 118 |
-| Marlon Romero | 108 | 14.84% | 13 | 111 |
+| José Leonardo Vargas | 285 | 37.65% | 12 | 242 |
+| Nicolás Tello | 224 | 29.59% | 5 | 254 |
+| Marlon Romero | 133 | 17.57% | 13 | 139 |
+| Jersson Fabián Buitrago | 115 | 15.19% | 11 | 139 |
 
 ### Gráfico de torta
 
@@ -392,10 +392,10 @@ Participación (%) = (commits únicos del integrante / commits únicos totales d
 %%{init: {"themeVariables": {"pie1": "#ff6f61", "pie2": "#3498db", "pie3": "#f1c40f", "pie4": "#1abc9c", "pieLabelColor": "#000000", "pieLabelFontSize": "24px", "pieLabelFontWeight": "700"}}}%%
 pie showData
     title Participación del grupo de trabajo
-    "José Leonardo Vargas" : 281
+    "José Leonardo Vargas" : 285
     "Nicolás Tello" : 224
+    "Marlon Romero" : 133
     "Jersson Fabián Buitrago" : 115
-    "Marlon Romero" : 108
 ```
 
 ### Gráfico de barras
@@ -403,8 +403,8 @@ pie showData
 ```mermaid
 xychart-beta
     title "Participación del grupo de trabajo"
-    x-axis ["José Leonardo Vargas", "Nicolás Tello", "Jersson Fabián Buitrago", "Marlon Romero"]
-    y-axis "Commits únicos" 0 --> 281
-    bar [281, 224, 115, 108]
+    x-axis ["José Leonardo Vargas", "Nicolás Tello", "Marlon Romero", "Jersson Fabián Buitrago"]
+    y-axis "Commits únicos" 0 --> 285
+    bar [285, 224, 133, 115]
 ```
 <!-- KPI:END -->
