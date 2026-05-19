@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-19T14:09:41.031652+00:00",
-  "total_unique_commits": 721,
+  "generated_at": "2026-05-19T14:47:30.340597+00:00",
+  "total_unique_commits": 726,
   "participants": {
     "JerssonF": {
       "display_name": "Jersson Fabián Buitrago",
-      "commits": 108,
+      "commits": 113,
       "repos": [
         "FarmaExpres/FarmaExpres-Frontend",
         "Temenico/FarmaExpres-Frontend",
@@ -14,7 +14,9 @@
         "jose6668/FarmaExpres-Doc",
         "jose6668/FarmaExpres-Weeks",
         "jose6668/FarmaExpres_Backend",
-        "jose6668/FarmaExpres_Micro_Gateway"
+        "jose6668/FarmaExpres_Micro_Gateway",
+        "jose6668/FarmaExpres_Micro_Inventory",
+        "jose6668/FarmaExpres_Micro_Login"
       ],
       "branches": [
         "FarmaExpres/FarmaExpres-Frontend:Develop",
@@ -132,7 +134,9 @@
         "jose6668/FarmaExpres_Backend:HU-MDRT-001-qa",
         "jose6668/FarmaExpres_Backend:QA",
         "jose6668/FarmaExpres_Backend:main",
-        "jose6668/FarmaExpres_Micro_Gateway:main"
+        "jose6668/FarmaExpres_Micro_Gateway:main",
+        "jose6668/FarmaExpres_Micro_Inventory:main",
+        "jose6668/FarmaExpres_Micro_Login:main"
       ]
     },
     "Marlon271": {
@@ -761,7 +765,7 @@
       "branches": 3,
       "commits": 69,
       "by_branch": {
-        "main": 1143,
+        "main": 1144,
         "origin": 97,
         "prueba-kpi": 31
       }
@@ -995,7 +999,7 @@
     },
     "jose6668/FarmaExpres_Micro_Inventory": {
       "branches": 13,
-      "commits": 23,
+      "commits": 24,
       "by_branch": {
         "HU-BE-11-dev": 8,
         "HU-BE-11-qa": 6,
@@ -1006,7 +1010,7 @@
         "HU-doc-dev": 3,
         "HU-doc-qa": 2,
         "develop": 15,
-        "main": 1,
+        "main": 2,
         "qa": 9,
         "realease": 1,
         "realease.2": 15
@@ -1014,7 +1018,7 @@
     },
     "jose6668/FarmaExpres_Micro_Login": {
       "branches": 11,
-      "commits": 25,
+      "commits": 29,
       "by_branch": {
         "HU-BE-11-dev": 7,
         "HU-BE-11-qa": 12,
@@ -1023,7 +1027,7 @@
         "HU-doc-dev": 2,
         "HU-doc-qa": 2,
         "develop": 12,
-        "main": 1,
+        "main": 5,
         "qa": 14,
         "realease": 1,
         "realease.2": 12
