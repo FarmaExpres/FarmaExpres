@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-20T18:33:51.597378+00:00",
-  "total_unique_commits": 815,
+  "generated_at": "2026-05-20T20:39:33.692940+00:00",
+  "total_unique_commits": 819,
   "participants": {
     "JerssonF": {
       "display_name": "Jersson Fabián Buitrago",
@@ -165,7 +165,7 @@
     },
     "Marlon271": {
       "display_name": "Marlon Romero",
-      "commits": 159,
+      "commits": 163,
       "repos": [
         "FarmaExpres/FarmaExpres-Frontend",
         "Marlon271/FarmaExpres-Micro-NoSQL",
@@ -324,7 +324,8 @@
         "jose6668/FarmaExpres_Backend:HU-MDRT-002-qa",
         "jose6668/FarmaExpres_Backend:HU-MDRT-003-dev",
         "jose6668/FarmaExpres_Backend:HU-MDRT-003-qa",
-        "jose6668/FarmaExpres_Backend:QA"
+        "jose6668/FarmaExpres_Backend:QA",
+        "jose6668/FarmaExpres_Backend:main"
       ]
     },
     "Temenico": {
@@ -598,7 +599,8 @@
         "jose6668/FarmaExpres_Backend:HU-MDRT-003-dev",
         "jose6668/FarmaExpres_Backend:HU-MDRT-003-qa",
         "jose6668/FarmaExpres_Backend:HU-doc-dev",
-        "jose6668/FarmaExpres_Backend:QA"
+        "jose6668/FarmaExpres_Backend:QA",
+        "jose6668/FarmaExpres_Backend:main"
       ]
     },
     "jose6668": {
@@ -875,7 +877,7 @@
       "branches": 3,
       "commits": 71,
       "by_branch": {
-        "main": 1158,
+        "main": 1159,
         "origin": 97,
         "prueba-kpi": 31
       }
@@ -1012,9 +1014,9 @@
     },
     "jose6668/FarmaExpres_Backend": {
       "branches": 94,
-      "commits": 344,
+      "commits": 348,
       "by_branch": {
-        "Develop": 205,
+        "Develop": 207,
         "HU-05-NTM-dev": 173,
         "HU-05-NTM-qa": 179,
         "HU-007-dev": 75,
@@ -1095,8 +1097,8 @@
         "HU-JLV-003-qa": 170,
         "HU-MDRT-001-qa": 164,
         "HU-MDRT-001": 159,
-        "HU-MDRT-002-dev": 204,
-        "HU-MDRT-002-qa": 186,
+        "HU-MDRT-002-dev": 206,
+        "HU-MDRT-002-qa": 191,
         "HU-MDRT-003-dev": 178,
         "HU-MDRT-003-qa": 185,
         "HU-dev": 14,
@@ -1107,7 +1109,7 @@
         "QA": 190,
         "Release.1": 3,
         "Release.2": 3,
-        "main": 5
+        "main": 196
       }
     },
     "jose6668/FarmaExpres_Micro_Gateway": {
