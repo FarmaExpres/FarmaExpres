@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-20T09:56:48.691300+00:00",
-  "total_unique_commits": 783,
+  "generated_at": "2026-05-20T12:28:25.487591+00:00",
+  "total_unique_commits": 785,
   "participants": {
     "JerssonF": {
       "display_name": "Jersson Fabián Buitrago",
@@ -581,7 +581,7 @@
     },
     "jose6668": {
       "display_name": "José Leonardo Vargas",
-      "commits": 289,
+      "commits": 291,
       "repos": [
         "FarmaExpres/FarmaExpres-Frontend",
         "Marlon271/FarmaExpres-database",
@@ -843,7 +843,7 @@
       "branches": 3,
       "commits": 71,
       "by_branch": {
-        "main": 1155,
+        "main": 1156,
         "origin": 97,
         "prueba-kpi": 31
       }
@@ -976,9 +976,9 @@
     },
     "jose6668/FarmaExpres_Backend": {
       "branches": 93,
-      "commits": 325,
+      "commits": 327,
       "by_branch": {
-        "Develop": 189,
+        "Develop": 191,
         "HU-05-NTM-dev": 173,
         "HU-05-NTM-qa": 179,
         "HU-007-dev": 75,
@@ -1045,7 +1045,7 @@
         "HU-ADR-019-qa": 23,
         "HU-ADR-020-dev": 38,
         "HU-ADR-020-qa": 24,
-        "HU-ADR-023-JLV-dev": 185,
+        "HU-ADR-023-JLV-dev": 186,
         "HU-JFBM-001-dev": 150,
         "HU-JFBM-001-qa": 156,
         "HU-JFBM-002-dev": 162,
