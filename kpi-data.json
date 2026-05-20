@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-20T16:10:51.939710+00:00",
-  "total_unique_commits": 804,
+  "generated_at": "2026-05-20T18:33:51.597378+00:00",
+  "total_unique_commits": 815,
   "participants": {
     "JerssonF": {
       "display_name": "Jersson Fabián Buitrago",
@@ -29,6 +29,7 @@
         "FarmaExpres/FarmaExpres-Frontend:HU-JLV-002-dev",
         "FarmaExpres/FarmaExpres-Frontend:HU-JLV-002-qa",
         "FarmaExpres/FarmaExpres-Frontend:HU-JVL-pipe-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JVL-pipe-qa",
         "FarmaExpres/FarmaExpres-Frontend:HU-MDRT-001",
         "FarmaExpres/FarmaExpres-Frontend:HU-MDRT-001-qa",
         "FarmaExpres/FarmaExpres-Frontend:HU-MDRT-002-dev",
@@ -47,6 +48,7 @@
         "Temenico/FarmaExpres-Frontend:HU-JLV-002-dev",
         "Temenico/FarmaExpres-Frontend:HU-JLV-002-qa",
         "Temenico/FarmaExpres-Frontend:HU-JVL-pipe-dev",
+        "Temenico/FarmaExpres-Frontend:HU-JVL-pipe-qa",
         "Temenico/FarmaExpres-Frontend:HU-MDRT-001",
         "Temenico/FarmaExpres-Frontend:HU-MDRT-001-qa",
         "Temenico/FarmaExpres-Frontend:HU-MDRT-002-dev",
@@ -65,6 +67,7 @@
         "Temenico/FarmaExpres-portal:HU-JLV-002-dev",
         "Temenico/FarmaExpres-portal:HU-JLV-002-qa",
         "Temenico/FarmaExpres-portal:HU-JVL-pipe-dev",
+        "Temenico/FarmaExpres-portal:HU-JVL-pipe-qa",
         "Temenico/FarmaExpres-portal:HU-MDRT-001",
         "Temenico/FarmaExpres-portal:HU-MDRT-001-qa",
         "Temenico/FarmaExpres-portal:HU-MDRT-002-dev",
@@ -162,7 +165,7 @@
     },
     "Marlon271": {
       "display_name": "Marlon Romero",
-      "commits": 156,
+      "commits": 159,
       "repos": [
         "FarmaExpres/FarmaExpres-Frontend",
         "Marlon271/FarmaExpres-Micro-NoSQL",
@@ -187,6 +190,7 @@
         "FarmaExpres/FarmaExpres-Frontend:HU-JLV-002-dev",
         "FarmaExpres/FarmaExpres-Frontend:HU-JLV-002-qa",
         "FarmaExpres/FarmaExpres-Frontend:HU-JVL-pipe-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JVL-pipe-qa",
         "FarmaExpres/FarmaExpres-Frontend:HU-MDRT-001",
         "FarmaExpres/FarmaExpres-Frontend:HU-MDRT-001-qa",
         "FarmaExpres/FarmaExpres-Frontend:HU-MDRT-002-dev",
@@ -207,6 +211,7 @@
         "Marlon271/FarmaExpres-api:main",
         "Marlon271/FarmaExpres-database:Develop",
         "Marlon271/FarmaExpres-database:HU-01-dev",
+        "Marlon271/FarmaExpres-database:HU-01-qa",
         "Marlon271/FarmaExpres-database:QA",
         "Marlon271/FarmaExpres-database:Realease.1",
         "Marlon271/FarmaExpres-database:main",
@@ -220,6 +225,7 @@
         "Temenico/FarmaExpres-Frontend:HU-JLV-002-dev",
         "Temenico/FarmaExpres-Frontend:HU-JLV-002-qa",
         "Temenico/FarmaExpres-Frontend:HU-JVL-pipe-dev",
+        "Temenico/FarmaExpres-Frontend:HU-JVL-pipe-qa",
         "Temenico/FarmaExpres-Frontend:HU-MDRT-001",
         "Temenico/FarmaExpres-Frontend:HU-MDRT-001-qa",
         "Temenico/FarmaExpres-Frontend:HU-MDRT-002-dev",
@@ -236,6 +242,7 @@
         "Temenico/FarmaExpres-portal:HU-JLV-002-dev",
         "Temenico/FarmaExpres-portal:HU-JLV-002-qa",
         "Temenico/FarmaExpres-portal:HU-JVL-pipe-dev",
+        "Temenico/FarmaExpres-portal:HU-JVL-pipe-qa",
         "Temenico/FarmaExpres-portal:HU-MDRT-001",
         "Temenico/FarmaExpres-portal:HU-MDRT-001-qa",
         "Temenico/FarmaExpres-portal:HU-MDRT-002-dev",
@@ -375,6 +382,7 @@
         "FarmaExpres/FarmaExpres-Frontend:HU-JLV-002-dev",
         "FarmaExpres/FarmaExpres-Frontend:HU-JLV-002-qa",
         "FarmaExpres/FarmaExpres-Frontend:HU-JVL-pipe-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JVL-pipe-qa",
         "FarmaExpres/FarmaExpres-Frontend:HU-MDRT-001",
         "FarmaExpres/FarmaExpres-Frontend:HU-MDRT-001-qa",
         "FarmaExpres/FarmaExpres-Frontend:HU-MDRT-002-dev",
@@ -433,6 +441,7 @@
         "Temenico/FarmaExpres-Frontend:HU-JLV-002-dev",
         "Temenico/FarmaExpres-Frontend:HU-JLV-002-qa",
         "Temenico/FarmaExpres-Frontend:HU-JVL-pipe-dev",
+        "Temenico/FarmaExpres-Frontend:HU-JVL-pipe-qa",
         "Temenico/FarmaExpres-Frontend:HU-MDRT-001",
         "Temenico/FarmaExpres-Frontend:HU-MDRT-001-qa",
         "Temenico/FarmaExpres-Frontend:HU-MDRT-002-dev",
@@ -491,6 +500,7 @@
         "Temenico/FarmaExpres-portal:HU-JLV-002-dev",
         "Temenico/FarmaExpres-portal:HU-JLV-002-qa",
         "Temenico/FarmaExpres-portal:HU-JVL-pipe-dev",
+        "Temenico/FarmaExpres-portal:HU-JVL-pipe-qa",
         "Temenico/FarmaExpres-portal:HU-MDRT-001",
         "Temenico/FarmaExpres-portal:HU-MDRT-001-qa",
         "Temenico/FarmaExpres-portal:HU-MDRT-002-dev",
@@ -593,7 +603,7 @@
     },
     "jose6668": {
       "display_name": "José Leonardo Vargas",
-      "commits": 308,
+      "commits": 316,
       "repos": [
         "FarmaExpres/FarmaExpres-Frontend",
         "Marlon271/FarmaExpres-database",
@@ -635,6 +645,7 @@
         "FarmaExpres/FarmaExpres-Frontend:HU-JLV-002-dev",
         "FarmaExpres/FarmaExpres-Frontend:HU-JLV-002-qa",
         "FarmaExpres/FarmaExpres-Frontend:HU-JVL-pipe-dev",
+        "FarmaExpres/FarmaExpres-Frontend:HU-JVL-pipe-qa",
         "FarmaExpres/FarmaExpres-Frontend:HU-MDRT-001",
         "FarmaExpres/FarmaExpres-Frontend:HU-MDRT-001-qa",
         "FarmaExpres/FarmaExpres-Frontend:HU-MDRT-002-dev",
@@ -644,7 +655,10 @@
         "FarmaExpres/FarmaExpres-Frontend:QA",
         "FarmaExpres/FarmaExpres-Frontend:Release.2",
         "FarmaExpres/FarmaExpres-Frontend:main",
+        "Marlon271/FarmaExpres-database:Develop",
         "Marlon271/FarmaExpres-database:HU-01-dev",
+        "Marlon271/FarmaExpres-database:HU-01-qa",
+        "Marlon271/FarmaExpres-database:QA",
         "Temenico/FarmaExpres-Frontend:Develop",
         "Temenico/FarmaExpres-Frontend:HU-14-NTM-dev",
         "Temenico/FarmaExpres-Frontend:HU-14-NTM-qa",
@@ -671,6 +685,7 @@
         "Temenico/FarmaExpres-Frontend:HU-JLV-002-dev",
         "Temenico/FarmaExpres-Frontend:HU-JLV-002-qa",
         "Temenico/FarmaExpres-Frontend:HU-JVL-pipe-dev",
+        "Temenico/FarmaExpres-Frontend:HU-JVL-pipe-qa",
         "Temenico/FarmaExpres-Frontend:HU-MDRT-001",
         "Temenico/FarmaExpres-Frontend:HU-MDRT-001-qa",
         "Temenico/FarmaExpres-Frontend:HU-MDRT-002-dev",
@@ -706,6 +721,7 @@
         "Temenico/FarmaExpres-portal:HU-JLV-002-dev",
         "Temenico/FarmaExpres-portal:HU-JLV-002-qa",
         "Temenico/FarmaExpres-portal:HU-JVL-pipe-dev",
+        "Temenico/FarmaExpres-portal:HU-JVL-pipe-qa",
         "Temenico/FarmaExpres-portal:HU-MDRT-001",
         "Temenico/FarmaExpres-portal:HU-MDRT-001-qa",
         "Temenico/FarmaExpres-portal:HU-MDRT-002-dev",
@@ -859,14 +875,14 @@
       "branches": 3,
       "commits": 71,
       "by_branch": {
-        "main": 1157,
+        "main": 1158,
         "origin": 97,
         "prueba-kpi": 31
       }
     },
     "Temenico/FarmaExpres-portal": {
-      "branches": 58,
-      "commits": 195,
+      "branches": 59,
+      "commits": 197,
       "by_branch": {
         "Develop": 119,
         "HU-14-NTM-dev": 85,
@@ -912,6 +928,7 @@
         "HU-JLV-002-dev": 102,
         "HU-JLV-002-qa": 126,
         "HU-JVL-pipe-dev": 113,
+        "HU-JVL-pipe-qa": 175,
         "HU-MDRT-001-qa": 124,
         "HU-MDRT-001": 97,
         "HU-MDRT-002-dev": 110,
@@ -922,14 +939,14 @@
         "HU-doc-qa": 2,
         "HU-layout-dev": 4,
         "HU-layout-qa": 4,
-        "QA": 174,
+        "QA": 176,
         "Release.1": 1,
         "Release.2": 111,
         "main": 114
       }
     },
     "FarmaExpres/FarmaExpres-Frontend": {
-      "branches": 58,
+      "branches": 59,
       "commits": 0,
       "by_branch": {
         "Develop": 119,
@@ -976,6 +993,7 @@
         "HU-JLV-002-dev": 102,
         "HU-JLV-002-qa": 126,
         "HU-JVL-pipe-dev": 113,
+        "HU-JVL-pipe-qa": 175,
         "HU-MDRT-001-qa": 124,
         "HU-MDRT-001": 97,
         "HU-MDRT-002-dev": 110,
@@ -986,7 +1004,7 @@
         "HU-doc-qa": 2,
         "HU-layout-dev": 4,
         "HU-layout-qa": 4,
-        "QA": 174,
+        "QA": 176,
         "Release.1": 1,
         "Release.2": 111,
         "main": 114
@@ -994,7 +1012,7 @@
     },
     "jose6668/FarmaExpres_Backend": {
       "branches": 94,
-      "commits": 342,
+      "commits": 344,
       "by_branch": {
         "Develop": 205,
         "HU-05-NTM-dev": 173,
@@ -1064,7 +1082,7 @@
         "HU-ADR-020-dev": 38,
         "HU-ADR-020-qa": 24,
         "HU-ADR-023-JLV-dev": 192,
-        "HU-ADR-JLV-023-qa": 172,
+        "HU-ADR-JLV-023-qa": 189,
         "HU-JFBM-001-dev": 150,
         "HU-JFBM-001-qa": 156,
         "HU-JFBM-002-dev": 162,
@@ -1086,7 +1104,7 @@
         "HU-dev-Release.2": 2,
         "HU-dev-qa": 2,
         "HU-doc-dev": 30,
-        "QA": 187,
+        "QA": 190,
         "Release.1": 3,
         "Release.2": 3,
         "main": 5
@@ -1154,26 +1172,27 @@
       }
     },
     "Marlon271/FarmaExpres-database": {
-      "branches": 5,
-      "commits": 4,
+      "branches": 6,
+      "commits": 8,
       "by_branch": {
-        "Develop": 1,
-        "HU-01-dev": 4,
-        "QA": 1,
+        "Develop": 6,
+        "HU-01-dev": 5,
+        "HU-01-qa": 2,
+        "QA": 3,
         "Realease.1": 1,
         "main": 1
       }
     },
     "Marlon271/FarmaExpres-Micro-NoSQL": {
       "branches": 6,
-      "commits": 29,
+      "commits": 32,
       "by_branch": {
-        "Develop": 29,
-        "HU-MDRT-002-dev": 29,
-        "HU-MDRT-002-qa": 29,
-        "HU-MDRT-003-dev": 29,
-        "HU-MDRT-003-qa": 29,
-        "main": 1
+        "Develop": 31,
+        "HU-MDRT-002-dev": 31,
+        "HU-MDRT-002-qa": 31,
+        "HU-MDRT-003-dev": 31,
+        "HU-MDRT-003-qa": 31,
+        "main": 32
       }
     },
     "jose6668/FarmaExpres-Doc": {
@@ -1215,7 +1234,7 @@
       }
     },
     "Temenico/FarmaExpres-Frontend": {
-      "branches": 58,
+      "branches": 59,
       "commits": 0,
       "by_branch": {
         "Develop": 119,
@@ -1262,6 +1281,7 @@
         "HU-JLV-002-dev": 102,
         "HU-JLV-002-qa": 126,
         "HU-JVL-pipe-dev": 113,
+        "HU-JVL-pipe-qa": 175,
         "HU-MDRT-001-qa": 124,
         "HU-MDRT-001": 97,
         "HU-MDRT-002-dev": 110,
@@ -1272,7 +1292,7 @@
         "HU-doc-qa": 2,
         "HU-layout-dev": 4,
         "HU-layout-qa": 4,
-        "QA": 174,
+        "QA": 176,
         "Release.1": 1,
         "Release.2": 111,
         "main": 114
