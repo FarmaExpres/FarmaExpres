@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-20T20:39:33.692940+00:00",
-  "total_unique_commits": 819,
+  "generated_at": "2026-05-20T22:17:27.967651+00:00",
+  "total_unique_commits": 823,
   "participants": {
     "JerssonF": {
       "display_name": "Jersson Fabián Buitrago",
@@ -165,7 +165,7 @@
     },
     "Marlon271": {
       "display_name": "Marlon Romero",
-      "commits": 163,
+      "commits": 167,
       "repos": [
         "FarmaExpres/FarmaExpres-Frontend",
         "Marlon271/FarmaExpres-Micro-NoSQL",
@@ -877,16 +877,16 @@
       "branches": 3,
       "commits": 71,
       "by_branch": {
-        "main": 1159,
+        "main": 1160,
         "origin": 97,
         "prueba-kpi": 31
       }
     },
     "Temenico/FarmaExpres-portal": {
       "branches": 59,
-      "commits": 197,
+      "commits": 200,
       "by_branch": {
-        "Develop": 119,
+        "Develop": 122,
         "HU-14-NTM-dev": 85,
         "HU-14-NTM-qa": 113,
         "HU-15-NTM-dev": 90,
@@ -935,7 +935,7 @@
         "HU-MDRT-001": 97,
         "HU-MDRT-002-dev": 110,
         "HU-MDRT-002-qa": 110,
-        "HU-MDRT-003-dev": 114,
+        "HU-MDRT-003-dev": 121,
         "HU-MDRT-003-qa": 173,
         "HU-doc-dev": 2,
         "HU-doc-qa": 2,
@@ -951,7 +951,7 @@
       "branches": 59,
       "commits": 0,
       "by_branch": {
-        "Develop": 119,
+        "Develop": 122,
         "HU-14-NTM-dev": 85,
         "HU-14-NTM-qa": 113,
         "HU-15-NTM-dev": 90,
@@ -1000,7 +1000,7 @@
         "HU-MDRT-001": 97,
         "HU-MDRT-002-dev": 110,
         "HU-MDRT-002-qa": 110,
-        "HU-MDRT-003-dev": 114,
+        "HU-MDRT-003-dev": 121,
         "HU-MDRT-003-qa": 173,
         "HU-doc-dev": 2,
         "HU-doc-qa": 2,
@@ -1199,9 +1199,9 @@
     },
     "jose6668/FarmaExpres-Doc": {
       "branches": 1,
-      "commits": 32,
+      "commits": 33,
       "by_branch": {
-        "main": 32
+        "main": 33
       }
     },
     "jose6668/FarmaExpres-Diagramas": {
@@ -1239,7 +1239,7 @@
       "branches": 59,
       "commits": 0,
       "by_branch": {
-        "Develop": 119,
+        "Develop": 122,
         "HU-14-NTM-dev": 85,
         "HU-14-NTM-qa": 113,
         "HU-15-NTM-dev": 90,
@@ -1288,7 +1288,7 @@
         "HU-MDRT-001": 97,
         "HU-MDRT-002-dev": 110,
         "HU-MDRT-002-qa": 110,
-        "HU-MDRT-003-dev": 114,
+        "HU-MDRT-003-dev": 121,
         "HU-MDRT-003-qa": 173,
         "HU-doc-dev": 2,
         "HU-doc-qa": 2,
