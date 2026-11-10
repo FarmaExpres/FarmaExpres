@@ -373,7 +373,7 @@ El proyecto evoluciona bajo un enfoque incremental.
 **Fórmula:**  
 Participación (%) = (commits únicos del integrante / commits únicos totales del ecosistema) × 100
 
-**Última actualización:** 2026-11-09 23:10 UTC
+**Última actualización:** 2026-11-10 04:37 UTC
 
 **Cobertura del KPI:** todos los commits detectados en todas las ramas de todos los repositorios configurados, deduplicados por SHA.
 
